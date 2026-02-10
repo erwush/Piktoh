@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Dialog", menuName = "Scriptable Objects/Dialog")]
+[CreateAssetMenu(fileName = "Dialog", menuName = "Dialog")]
 public class Dialog : ScriptableObject
 {
     public int dialogCount;
@@ -8,4 +8,5 @@ public class Dialog : ScriptableObject
     public string[] nama;
     public string[] text;
     public Sprite[] avatar;
+    public float typingSpeed;
 }

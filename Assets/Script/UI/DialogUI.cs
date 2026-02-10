@@ -15,6 +15,7 @@ public class DialogUI : MonoBehaviour
     public GameObject player;
     public Dialog dial;
     public string dialtext;
+    private Coroutine dialCor;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -34,17 +35,22 @@ public class DialogUI : MonoBehaviour
 
       IEnumerator TypeDialog()
     {
+        typingSpeed = dial.typingSpeed;
         dialtext = "";
         foreach (char c in dial.text[dial.currentDial])
         {
             dialtext += c;
-            yield return new WaitForSeconds(0.05f);
+            yield return new WaitForSeconds(typingSpeed);
         }
     }
 
     public void ChangeDialog()
     {
-        StopCoroutine(TypeDialog());
+        if(dialCor != null)
+        {
+            StopCoroutine(dialCor);
+            dialCor = null;
+        }
         int i = dial.currentDial;
         if (i >= dial.dialogCount)
         {
@@ -58,7 +64,9 @@ public class DialogUI : MonoBehaviour
             text[1].text = dial.nama[i];
             image.sprite = dial.avatar[i];
             image.preserveAspect = true;
-            StartCoroutine(TypeDialog());
+            if(dialCor == null) {
+                dialCor = StartCoroutine(TypeDialog());
+            }
             dial.currentDial++;
             i++;
             if (i > dial.dialogCount)
