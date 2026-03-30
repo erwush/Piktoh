@@ -8,6 +8,7 @@ public class Movement : MonoBehaviour
     public bool canMove;
     public float spd;
     public Rigidbody2D rb;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -20,7 +21,7 @@ public class Movement : MonoBehaviour
     {
         if(canMove){
             Vector2 direction = input.action.ReadValue<Vector2>();
-        rb.linearVelocity = direction * spd;
+            rb.linearVelocity = (direction * spd).normalized;
         }
 
     }
