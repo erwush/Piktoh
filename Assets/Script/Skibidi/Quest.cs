@@ -4,8 +4,8 @@ using UnityEngine.UI;
 
 public class Quest : MonoBehaviour
 {
-    public Image UI;
-    public GameObject UII;
+    public GameObject UI;
+    public GameObject[] Scroll;
     public bool isOpen;
     private bool isMoving;
     private Coroutine cor;
@@ -28,13 +28,13 @@ public class Quest : MonoBehaviour
 
     IEnumerator MoveUI()
     {
-        RectTransform rect = UI.rectTransform;
+        RectTransform rect = UI.GetComponent<RectTransform>();
 
         if (!isOpen && !YuAi.isOpen)
         {
             isOpen = true;
             YuAi.isOpen = true;
-            while (rect.anchoredPosition.x > 720)
+            while (rect.anchoredPosition.x > 770)
             {
                 rect.anchoredPosition = new Vector2(
                     rect.anchoredPosition.x - 10,
@@ -43,23 +43,30 @@ public class Quest : MonoBehaviour
 
                 yield return null;
             }
-            UII.SetActive(true);
-            UII.GetComponent<Animator>().speed = 1;
-            UII.GetComponent<Animator>().Play("Questest");
-            yield return new WaitForSeconds(1.0f);
-            UII.GetComponent<Animator>().speed = 0;
+
+            Scroll[0].GetComponent<Animator>().speed = 1;
+            Scroll[0].GetComponent<Animator>().Play("ScrollOpen");
+            Scroll[1].GetComponent<Animator>().speed = 1;
+            Scroll[1].GetComponent<Animator>().Play("ScrollOpen");
+            
+            yield return new WaitForSeconds(0.75f);
+            Scroll[1].GetComponent<Animator>().speed = 0;
+            Scroll[0].GetComponent<Animator>().speed = 0;
 
         }
         else if (isOpen)
         {
             isOpen = false;
             YuAi.isOpen = false;
-            UII.GetComponent<Animator>().speed = 1;
-            UII.GetComponent<Animator>().Play("Questest2");
-            yield return new WaitForSeconds(1.0f);
-            UII.GetComponent<Animator>().speed = 0;
-            UII.SetActive(false);
-            while (rect.anchoredPosition.x < 1200)
+            Scroll[0].GetComponent<Animator>().speed = 1;
+            Scroll[0].GetComponent<Animator>().Play("ScrollClose");
+            Scroll[1].GetComponent<Animator>().speed = 1;
+            Scroll[1].GetComponent<Animator>().Play("ScrollClose");
+            yield return new WaitForSeconds(0.75f);
+            Scroll[1].GetComponent<Animator>().speed = 0;
+            Scroll[0].GetComponent<Animator>().speed = 0;
+
+            while (rect.anchoredPosition.x < 1150)
             {
                 rect.anchoredPosition = new Vector2(
                     rect.anchoredPosition.x + 10,

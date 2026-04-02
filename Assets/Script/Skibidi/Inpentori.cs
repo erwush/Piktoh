@@ -10,10 +10,12 @@ public class Inpentori : MonoBehaviour
     public bool isOpen;
     public TextMeshProUGUI textMesh;
     public GameObject panel;
+    public Image[] slotImg;
     public Image[] slot;
     public TextMeshProUGUI[] stackCount;
     public bool isOpenedOnce;
     public GameObject inv;
+    public Scrollbar scrollBar;
     private YuAi YuAi;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -22,6 +24,8 @@ public class Inpentori : MonoBehaviour
         for (int i = 0; i < slot.Length; i++)
         {
             slot[i] = panel.transform.GetChild(i).GetComponent<Image>();
+            slotImg[i] = slot[i].transform.Find("ItemSprite").GetComponent<Image>();
+
             stackCount[i] = panel.transform.GetChild(i).GetComponentInChildren<TextMeshProUGUI>();
         }
         isOpenedOnce = false;
@@ -48,7 +52,7 @@ public class Inpentori : MonoBehaviour
         {
             for (int i = 0; i < item.Count; i++)
             {
-                slot[i].sprite = item[i].itemSprite;
+                slotImg[i].sprite = item[i].itemSprite;
                 stackCount[i].text = item[i].itemCount.ToString();
             }
         }
@@ -59,6 +63,7 @@ public class Inpentori : MonoBehaviour
     public void CloseInventory()
     {
         inv.SetActive(false);
+        scrollBar.value = 1;
     }
 
     public void ToggleInventory()

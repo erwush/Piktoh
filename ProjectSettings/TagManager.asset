@@ -6,6 +6,7 @@ TagManager:
   tags:
   - DialogUI
   - Mekanik
+  - ItemIcon
   layers:
   - Default
   - TransparentFX

@@ -21,7 +21,7 @@ public class Movement : MonoBehaviour
     {
         if(canMove){
             Vector2 direction = input.action.ReadValue<Vector2>();
-            rb.linearVelocity = (direction * spd).normalized;
+           rb.linearVelocity = direction.normalized * spd;
         }
 
     }
