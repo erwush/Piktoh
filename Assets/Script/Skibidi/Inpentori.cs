@@ -16,7 +16,9 @@ public class Inpentori : MonoBehaviour
     public bool isOpenedOnce;
     public GameObject inv;
     public Scrollbar scrollBar;
+    private bool isMoving;
     private YuAi YuAi;
+    public GameObject inven;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -34,7 +36,7 @@ public class Inpentori : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.B))
+        if (Input.GetKeyDown(KeyCode.B) && !isMoving)
         {
             ToggleInventory();
         }
@@ -46,8 +48,9 @@ public class Inpentori : MonoBehaviour
            item.AddRange(Resources.LoadAll<Item>("Items"));
     }
 
-    public void ShowInventory()
+    IEnumerator ShowInventory()
     {
+        isMoving = true;
         if (!isOpenedOnce)
         {
             for (int i = 0; i < item.Count; i++)
@@ -57,26 +60,35 @@ public class Inpentori : MonoBehaviour
             }
         }
         inv.SetActive(true);
+        inven.GetComponent<Animator>().Play("Open");
+        yield return new WaitForSeconds(0.5f);
+        inven.GetComponent<Animator>().speed = 0;
         isOpenedOnce = true;
+        isMoving = false;
     }
 
-    public void CloseInventory()
+    IEnumerator CloseInventory()
     {
+        isMoving = true;
+        inven.GetComponent<Animator>().speed = 1;
+        inven.GetComponent<Animator>().Play("Close");
+        yield return new WaitForSeconds(0.5f);
         inv.SetActive(false);
         scrollBar.value = 1;
+        isMoving = false;
     }
 
     public void ToggleInventory()
     {
         if (isOpen)
         {
-            CloseInventory();
+            StartCoroutine(CloseInventory());
             isOpen = false;
             YuAi.isOpen = false;
         }
         else if(!isOpen && !YuAi.isOpen)
         {
-            ShowInventory();
+            StartCoroutine(ShowInventory());
             isOpen = true;
             YuAi.isOpen = true;
         }

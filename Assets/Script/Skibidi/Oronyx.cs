@@ -11,6 +11,7 @@ public class Oronyx : MonoBehaviour
     private BarController barController;
     public bool isNarik;
     public AudioSource sfx;
+    public Player pleyer;
     public GameObject keybind;
     public bool isStart;
     public GameObject reward;
@@ -51,9 +52,13 @@ public class Oronyx : MonoBehaviour
             progress[0] += Time.deltaTime;
             barController.slider.direction = Slider.Direction.RightToLeft;
             barController.UpdateBar(progress[0], maxProgress[0]);
+            if(progress[0] >= maxProgress[0]){
+                pleyer.energy -= 2;
+            }
         }
         else if (inArea && Input.GetKeyDown(KeyCode.Space) && isNarik && progress[1] < maxProgress[1] && isStart)
         {
+            pleyer.energy -= 2;
             progressBar.SetActive(true);
             barController.UpdateBar(progress[1], maxProgress[1]);
             barController.slider.direction = Slider.Direction.LeftToRight;
@@ -62,6 +67,7 @@ public class Oronyx : MonoBehaviour
 
         if(progress[0] >= maxProgress[0]){
             isNarik = true;
+            
             barController.UpdateBar(progress[1], maxProgress[1]);
         }
         if (progress[1] >= maxProgress[1])
@@ -86,6 +92,10 @@ public class Oronyx : MonoBehaviour
         if (collision.tag == "Player")
         {
             inArea = true;
+        }
+        if(pleyer == null)
+        {
+            pleyer = collision.gameObject.GetComponent<Player>();
         }
     }
 
