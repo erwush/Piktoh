@@ -7,4 +7,6 @@ public class Item : ScriptableObject
     public string itemName;
     public Sprite itemSprite;
     public int itemCount;
+    public bool isFood;
+
 }

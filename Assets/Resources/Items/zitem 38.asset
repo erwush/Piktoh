@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 7
   itemName: Item 1
-  itemSprite: {fileID: -2027127034646915247, guid: 633d10b29e0c6aa45ba27c3bf7aa0ee4, type: 3}
+  itemSprite: {fileID: 21300000, guid: 45d301b40f2b5f14889d78930d24bf52, type: 3}
   itemCount: 12
+  isFood: 1

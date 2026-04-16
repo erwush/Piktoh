@@ -16,3 +16,4 @@ MonoBehaviour:
   itemName: Item 1
   itemSprite: {fileID: -2027127034646915247, guid: 633d10b29e0c6aa45ba27c3bf7aa0ee4, type: 3}
   itemCount: 12
+  isFood: 0
