@@ -1,0 +1,375 @@
+fileFormatVersion: 2
+guid: c2b7b597f4785414fb4d1a048031b7c8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8531637420531930155
+    second: kriper_0
+  - first:
+      213: -4927027506584379375
+    second: kriper_1
+  - first:
+      213: -2605707249237720854
+    second: kriper_2
+  - first:
+      213: -454982776978729984
+    second: kriper_3
+  - first:
+      213: -5582565148217125687
+    second: kriper_4
+  - first:
+      213: -8073080270362149964
+    second: kriper_5
+  - first:
+      213: 5007839528713473547
+    second: kriper_6
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: 0
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: kriper_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 119
+        width: 30
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dba3c4f7f8899980800000000000000
+      internalID: -8531637420531930155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kriper_1
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 112
+        width: 40
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 110a577569eaf9bb0800000000000000
+      internalID: -4927027506584379375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kriper_2
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 111
+        width: 28
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae0868cff0ba6dbd0800000000000000
+      internalID: -2605707249237720854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kriper_3
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 107
+        width: 29
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 004134f23939fa9f0800000000000000
+      internalID: -454982776978729984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kriper_4
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 102
+        width: 27
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c4da0d439eb682b0800000000000000
+      internalID: -5582565148217125687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kriper_5
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 109
+        width: 29
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bb79d16448a6ff80800000000000000
+      internalID: -8073080270362149964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kriper_6
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 96
+        width: 32
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0e4029c48b6f7540800000000000000
+      internalID: 5007839528713473547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline:
+    - - {x: -99, y: 35}
+      - {x: -111, y: 33}
+      - {x: -124, y: 19}
+      - {x: -126, y: 0}
+      - {x: -115, y: -10}
+      - {x: -99, y: -7}
+      - {x: -102, y: 2}
+      - {x: -113, y: 1}
+      - {x: -116, y: 7}
+      - {x: -115, y: 15}
+      - {x: -97, y: 28}
+    - - {x: -72, y: -14}
+      - {x: -73, y: -12}
+      - {x: -78, y: 12}
+      - {x: -68, y: 18}
+      - {x: -51, y: 22}
+      - {x: -52, y: 30}
+      - {x: -71, y: 29}
+      - {x: -81, y: 23}
+      - {x: -84, y: 31}
+      - {x: -92, y: 28}
+      - {x: -92, y: 7}
+      - {x: -89, y: -10}
+      - {x: -85, y: -17}
+      - {x: -78, y: -17}
+    - - {x: -25, y: -1}
+      - {x: -19, y: 3}
+      - {x: -18, y: 23}
+      - {x: -46, y: 23}
+      - {x: -48, y: 18}
+      - {x: -48, y: -4}
+      - {x: -34, y: -18}
+      - {x: -20, y: -19}
+      - {x: -20, y: -8}
+      - {x: -33, y: -4}
+      - {x: -36, y: 1}
+    - - {x: 102, y: -2}
+      - {x: 117, y: 7}
+      - {x: 118, y: 14}
+      - {x: 103, y: 15}
+      - {x: 95, y: 7}
+      - {x: 97, y: 21}
+      - {x: 84, y: 21}
+      - {x: 84, y: -9}
+      - {x: 91, y: -31}
+      - {x: 108, y: -33}
+    - - {x: 28, y: 25}
+      - {x: 21, y: 19}
+      - {x: 22, y: -3}
+      - {x: 34, y: -23}
+      - {x: 43, y: -27}
+      - {x: 45, y: -14}
+      - {x: 39, y: -3}
+      - {x: 43, y: 1}
+      - {x: 50, y: 17}
+      - {x: 52, y: 15}
+      - {x: 49, y: -5}
+      - {x: 62, y: -19}
+      - {x: 80, y: -20}
+      - {x: 79, y: -9}
+      - {x: 64, y: -6}
+      - {x: 72, y: -6}
+      - {x: 78, y: 4}
+      - {x: 75, y: 14}
+      - {x: 72, y: 18}
+      - {x: 53, y: 17}
+      - {x: 45, y: 28}
+    - - {x: 13, y: -6}
+      - {x: 17, y: 7}
+      - {x: 10, y: 14}
+      - {x: -6, y: 15}
+      - {x: -13, y: 5}
+      - {x: -11, y: -16}
+      - {x: 10, y: -22}
+      - {x: 13, y: -12}
+      - {x: -2, y: -7}
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 1537655665
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      kriper_0: -8531637420531930155
+      kriper_1: -4927027506584379375
+      kriper_2: -2605707249237720854
+      kriper_3: -454982776978729984
+      kriper_4: -5582565148217125687
+      kriper_5: -8073080270362149964
+      kriper_6: 5007839528713473547
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
