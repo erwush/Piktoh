@@ -5,9 +5,11 @@ public class DroppedItem : MonoBehaviour
 
     public Item data;
     public SpriteRenderer sprite;
+    public Inpentori inpen;
 
     void Start()
     {
+        inpen = GameObject.Find("Inpentori").GetComponent<Inpentori>();
         sprite = GetComponent<SpriteRenderer>();
         sprite.sprite = data.itemSprite;
     }
@@ -15,12 +17,13 @@ public class DroppedItem : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            Inpentori inpen = collision.gameObject.GetComponent<Inpentori>();
+            
             for (int i = 0; i < inpen.slot.Length; i++)
             {
                 if (inpen.item[i] == data)
                 {
                     inpen.item[i].itemCount++;
+                    inpen.stackCount[i].text = inpen.item[i].itemCount.ToString();
                 }
             }
             Destroy(gameObject);
