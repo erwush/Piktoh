@@ -5990,7 +5990,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d1915983bd80a549bebb705119a97a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mancing: {fileID: 1037597199}
+  mancing: {fileID: 0}
 --- !u!222 &190002425
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14919,8 +14919,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1037597199}
-        m_TargetAssemblyTypeName: Mancing, Assembly-CSharp
+      - m_Target: {fileID: 1037597201}
+        m_TargetAssemblyTypeName: MancingPart2, Assembly-CSharp
         m_MethodName: StartFishing
         m_Mode: 1
         m_Arguments:
@@ -32452,7 +32452,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1037597200}
-  - component: {fileID: 1037597199}
+  - component: {fileID: 1037597201}
   m_Layer: 7
   m_Name: Mancing
   m_TagString: Untagged
@@ -32460,35 +32460,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1037597199
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1037597198}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5ed95324759ade4fa273d2a6d95c28c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  xLimit: 310
-  strike: {fileID: 190002422}
-  bait: {fileID: 626445235}
-  strikePos: 0
-  baitSpd: 5
-  isFishing: 0
-  movingState: 0
-  failCounter: 0
-  canStrike: 0
-  rect: {fileID: 0}
-  text:
-  - {fileID: 982118695}
-  - {fileID: 1328171725}
-  - {fileID: 37729295}
-  distanceTolerance: 30
-  strikeCounter: 0
-  audio: {fileID: 490571446}
 --- !u!224 &1037597200
 RectTransform:
   m_ObjectHideFlags: 0
@@ -32511,6 +32482,36 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 295}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1037597201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1037597198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44bd8ccc422759c47a3c47535e50f5cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xLimit: 310
+  strike: {fileID: 190002422}
+  bait: {fileID: 626445235}
+  strikePos: 0
+  baitSpd: 500
+  strikeSpd: 200
+  isFishing: 0
+  movingState: 0
+  failCounter: 0
+  canStrike: 0
+  rect: {fileID: 0}
+  text:
+  - {fileID: 982118695}
+  - {fileID: 1328171725}
+  - {fileID: 37729295}
+  distanceTolerance: 30
+  strikeCounter: 0
+  audio: {fileID: 0}
 --- !u!1 &1038868772
 GameObject:
   m_ObjectHideFlags: 0
