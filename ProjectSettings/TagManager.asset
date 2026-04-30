@@ -8,14 +8,15 @@ TagManager:
   - Mekanik
   - ItemIcon
   - Bait
+  - House
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
-  - 
+  - Kotak
   - Enemy
   - 
   - 

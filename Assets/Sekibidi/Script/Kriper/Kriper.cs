@@ -15,9 +15,17 @@ public class Kriper : MonoBehaviour
     public Transform target;
     private SpriteRenderer selfSprite;
     public LayerMask pLayer;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public float atkRange;
+    public float atk;
+    public float spd;
+    public float atkSpd;
+    private KriperCombat combat;
+    private KriperMovement mvm;    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        health = maxHealth;
+        combat = GetComponent<KriperCombat>();
+        mvm = GetComponent<KriperMovement>();
         selfSprite = GetComponent<SpriteRenderer>();
     }
 
@@ -42,6 +50,14 @@ public class Kriper : MonoBehaviour
             drop.GetComponent<DroppedItem>().data = itemData;
             Destroy(gameObject);
         }
+        if(amount < 0)
+        {
+            mvm.target = mvm.player;
+            mvm.isTargetingPlayer = true;
+            combat.isTargetingPlayer = true;
+            mvm.ChangeState(EnemyState.Idle);
+            combat.targetLayer = combat.layer[1];
+        }
 
     }
 
@@ -62,40 +78,5 @@ public class Kriper : MonoBehaviour
         }
     }
 
-    // private void CheckForPlayer()
-    // {
-    //     Collider2D[] hits = Physics2D.OverlapCircleAll(detectPoint.position, detectRange[0], pLayer);
-
-
-
-    //     if (hits.Length > 0)
-    //     {
-    //         target = hits[0].transform;
-    //         if (Vector2.Distance(transform.position, player.position) <= stat.atkRange && atkTimer <= 0)
-    //         {
-
-    //             ChangeState(EnemyState.Attacking);
-    //         }
-    //         else if (Vector2.Distance(transform.position, player.position) > stat.atkRange && enemyState != EnemyState.Attacking)
-    //         {
-    //             ChangeState(EnemyState.Chasing);
-    //         }
-    //     }
-    //     else
-    //     {
-    //         rb.linearVelocity = Vector2.zero;
-    //         ChangeState(EnemyState.Idle);
-
-    //     }
-
-    //     // if (collision.CompareTag("Player"))
-    //     // {
-    //     //     if (player == null)
-    //     //     {
-
-    //     //         player = collision.transform;
-    //     //     }
-
-    //     // }
-    // }
+    
 }
