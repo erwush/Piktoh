@@ -14,6 +14,7 @@ public class DialogUI : MonoBehaviour
     public float typingSpeed;
     public GameObject player;
     public Dialog dial;
+    public Inpentori inven;
     public string dialtext;
     private Coroutine dialCor;
 
@@ -33,7 +34,7 @@ public class DialogUI : MonoBehaviour
 
     }
 
-      IEnumerator TypeDialog()
+    IEnumerator TypeDialog()
     {
         typingSpeed = dial.typingSpeed;
         dialtext = "";
@@ -46,7 +47,7 @@ public class DialogUI : MonoBehaviour
 
     public void ChangeDialog()
     {
-        if(dialCor != null)
+        if (dialCor != null)
         {
             StopCoroutine(dialCor);
             dialCor = null;
@@ -55,16 +56,21 @@ public class DialogUI : MonoBehaviour
         if (i >= dial.dialogCount)
         {
             dial.currentDial = 0;
-            player.GetComponent<Movement>().canMove = true;
-            UI.SetActive(false);
+
+            if (dial.isItem)
+            {
+                StartCoroutine(GiveItem(dial.givenItem));
+            }
+
         }
         else
         {
-            
+
             text[1].text = dial.nama[i];
             image.sprite = dial.avatar[i];
             image.preserveAspect = true;
-            if(dialCor == null) {
+            if (dialCor == null)
+            {
                 dialCor = StartCoroutine(TypeDialog());
             }
             dial.currentDial++;
@@ -76,5 +82,57 @@ public class DialogUI : MonoBehaviour
             }
 
         }
+    }
+
+    //*item section
+    public GameObject itemObj;
+    public TextMeshProUGUI itemName;
+    public GameObject textBg;
+    public GameObject itemUI;
+    // public void GainItem(Item item)
+    // {
+    //     StartCoroutine(GetItem(item));
+    // }
+
+    public IEnumerator GiveItem(Item theItem)
+    {
+        UI.SetActive(false);
+        itemUI.SetActive(true);
+        itemObj.SetActive(true);
+        textBg.SetActive(true);
+        itemObj.GetComponent<Animator>().speed = 1f;
+        textBg.GetComponent<Animator>().speed = 1f;
+        itemObj.GetComponent<Animator>().Play("entry");
+        textBg.GetComponent<Animator>().Play("entry");
+
+        itemObj.GetComponent<Image>().sprite = theItem.itemSprite;
+        yield return new WaitForSeconds(0.5f);
+        itemName.gameObject.SetActive(true);
+        inven.AddItem(theItem, dial.itemCount);
+        itemName.text = "Mendapatkan " + dial.itemCount + " " + theItem.itemName + "!";
+        itemObj.GetComponent<Animator>().speed = 0f;
+        textBg.GetComponent<Animator>().speed = 0f;
+    }
+
+    public void CloseItem()
+    {
+        StartCoroutine(GetItemExit());
+    }
+
+    public IEnumerator GetItemExit()
+    {
+        itemName.gameObject.SetActive(false);
+        itemObj.GetComponent<Animator>().speed = 1f;
+        textBg.GetComponent<Animator>().speed = 1f;
+        itemObj.GetComponent<Animator>().Play("exit");
+        textBg.GetComponent<Animator>().Play("exit");
+
+        yield return new WaitForSeconds(0.5f);
+        itemObj.GetComponent<Animator>().speed = 0f;
+        textBg.GetComponent<Animator>().speed = 0f;
+        itemObj.SetActive(false);
+        textBg.SetActive(false);
+        itemUI.SetActive(false);
+        player.GetComponent<Movement>().canMove = true;
     }
 }

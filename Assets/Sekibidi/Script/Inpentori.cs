@@ -69,7 +69,7 @@ public class Inpentori : MonoBehaviour
             for (int i = 0; i < item.Count; i++)
             {
                 slotImg[i].sprite = item[i].itemSprite;
-                stackCount[i].text = item[i].itemCount.ToString();
+                
                 dropButton[i] = slot[i].transform.Find("Drop").GetComponent<Button>();
                 useButton[i] = slot[i].transform.Find("Use").GetComponent<Button>();
                 slotBtn[i] = slot[i].GetComponent<Button>();
@@ -77,6 +77,10 @@ public class Inpentori : MonoBehaviour
                 slotBtn[i].onClick.AddListener(() => SelectItem(index));
                 slotInpen[i] = slot[i].GetComponent<SlotInpen>();
             }
+        }
+        for(int i = 0; i < item.Count; i++)
+        {
+            stackCount[i].text = item[i].itemCount.ToString();
         }
         inv.SetActive(true);
         inven.GetComponent<Animator>().Play("Open");
@@ -120,6 +124,19 @@ public class Inpentori : MonoBehaviour
             item[id].itemCount--;
             stackCount[id].text = item[id].itemCount.ToString();
             Debug.Log("Drop Item");
+        }
+    }
+
+    public void AddItem(Item item, int count)
+    {
+        
+        for (int i = 0; i < this.item.Count; i++)
+        {
+            if (this.item[i].codeName == item.codeName)
+            {
+                this.item[i].itemCount += count;
+                return;
+            }
         }
     }
 

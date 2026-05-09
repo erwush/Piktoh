@@ -19,10 +19,17 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if(canMove){
+        if (canMove)
+        {
             Vector2 direction = input.action.ReadValue<Vector2>();
-           rb.linearVelocity = direction.normalized * spd;
+            rb.linearVelocity = direction.normalized * spd;
         }
 
+    }
+    
+    public void StopMove()
+    {
+        canMove = false;
+        rb.linearVelocity = Vector2.zero;
     }
 }

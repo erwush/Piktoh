@@ -106,6 +106,7 @@ public class KriperMovement : MonoBehaviour
             {
                 ChangeState(EnemyState.Idle);
                 player = hits[0].transform;
+                target = player;
             }
             if (Vector2.Distance(transform.position, player.position) <= stat.atkRange && atkTimer <= 0)
             {

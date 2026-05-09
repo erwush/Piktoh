@@ -4,9 +4,11 @@ public class Interactable : MonoBehaviour
 {
     private bool inArea;
     public GameObject DialogUI;
+    public DialogUI dialScript;
     public GameObject self;
     public Dialog dialog;
     public GameObject keybind;
+    public YuAi yuai;
     private GameObject player;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -19,11 +21,12 @@ public class Interactable : MonoBehaviour
     {
         if (inArea && Input.GetButtonDown("Interact"))
         {
+            Debug.Log("skibidi");
             DialogUI.SetActive(true);
-            player.GetComponent<Movement>().canMove = false;
-            DialogUI.GetComponent<DialogUI>().obj = self;
-            DialogUI.GetComponent<DialogUI>().dial = dialog;
-            DialogUI.GetComponent<DialogUI>().ChangeDialog();
+            player.GetComponent<Movement>().StopMove();
+            dialScript.obj = self;
+            dialScript.dial = dialog;
+            dialScript.ChangeDialog();
         }
     }
 

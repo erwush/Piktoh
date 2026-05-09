@@ -4,9 +4,11 @@ using UnityEngine;
 public class Item : ScriptableObject
 {
     public int itemId;
+    public string codeName;
     public string itemName;
     public Sprite itemSprite;
     public int itemCount;
     public bool isFood;
+    public bool isPlant;
 
 }
