@@ -13,9 +13,13 @@ public class Player : MonoBehaviour
     public float atk;
     public Transform atkPoint;
     public float atkRange;
+    public LayerMask treeLayer;
     public LayerMask eLayer;
     private BatangPanas hotbar;
     private float atkTimer = 1.15f;
+    private float nebangTimer;
+    private float nebangSpd;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -37,13 +41,24 @@ public class Player : MonoBehaviour
         {
             atkTimer = atkSpd;
             Attack();
+        } 
+        if(nebangTimer <= 0 && Input.GetMouseButtonDown(0) && hotbar.activeSlot == 1)
+        {
+            nebangTimer = nebangSpd;
+            Nebang();
         }
+        
     }
 
     void Attack()
     {
         ApplyDamage();
 
+    }
+
+    void Nebang()
+    {
+        ApplyNebang();
     }
 
     public void ChangeHealth(float amount)
@@ -58,7 +73,7 @@ public class Player : MonoBehaviour
             health = 0;
         }
     }
-    
+
     public void ChangeEnergy(float amount)
     {
         energy += amount;
@@ -74,39 +89,62 @@ public class Player : MonoBehaviour
 
     void ApplyDamage()
     {
-        // Kita ambil semua collider tanpa filter layer dulu agar lebih pasti kena
-        Collider2D[] objectsHit = Physics2D.OverlapCircleAll(atkPoint.position, atkRange);
-        
-        Debug.Log("<color=white>Player:</color> Menghantam " + objectsHit.Length + " objek.");
-
-        foreach (Collider2D hit in objectsHit)
+        Collider2D[] enemies = Physics2D.OverlapCircleAll(atkPoint.position, atkRange, eLayer);
+        if (enemies.Length > 0)
         {
-            // JIKA YANG KENA ADALAH MUSUH
-            if (hit.CompareTag("Enemy"))
+            foreach (Collider2D enemy in enemies)
             {
-                Kriper enemyScript = hit.GetComponent<Kriper>();
-                if (enemyScript != null)
-                {
-                    Debug.Log("<color=orange>Player:</color> Menyakiti Kriper!");
-                    enemyScript.ChangeHealth(-atk);
-                }
+                enemies[0].GetComponent<Kriper>().ChangeHealth(-atk);
             }
-            
-            // JIKA YANG KENA ADALAH POHON
-            if (hit.CompareTag("Tree"))
-            {
-                Pohon treeScript = hit.GetComponent<Pohon>();
-                if (treeScript != null)
-                {
-                    Debug.Log("<color=cyan>Player:</color> Menebang Pohon!");
-                    treeScript.ChangeHealth(-atk);
-                    
-                    // Opsional: kurangi energi kalau nebang pohon
-                    ChangeEnergy(-5f); 
-                }
-            }
+
         }
     }
+    
+    void ApplyNebang()
+    {
+        Collider2D[] trees = Physics2D.OverlapCircleAll(atkPoint.position, atkRange, treeLayer);
+        if (trees.Length > 0)
+        {
+                trees[0].GetComponent<Pohon>().ChangeHealth(-1);
+
+        }
+    }
+
+    // void ApplyDamage2()
+    // {
+    //     // Kita ambil semua collider tanpa filter layer dulu agar lebih pasti kena
+    //     Collider2D[] objectsHit = Physics2D.OverlapCircleAll(atkPoint.position, atkRange);
+        
+        
+
+    //     foreach (Collider2D hit in objectsHit)
+    //     {
+    //         // JIKA YANG KENA ADALAH MUSUH
+    //         if (hit.CompareTag("Enemy"))
+    //         {
+    //             Kriper enemyScript = hit.GetComponent<Kriper>();
+    //             if (enemyScript != null)
+    //             {
+    //                 Debug.Log("<color=orange>Player:</color> Menyakiti Kriper!");
+    //                 enemyScript.ChangeHealth(-atk);
+    //             }
+    //         }
+            
+    //         // JIKA YANG KENA ADALAH POHON
+    //         if (hit.CompareTag("Tree"))
+    //         {
+    //             Pohon treeScript = hit.GetComponent<Pohon>();
+    //             if (treeScript != null)
+    //             {
+    //                 Debug.Log("<color=cyan>Player:</color> Menebang Pohon!");
+    //                 treeScript.ChangeHealth(-atk);
+                    
+    //                 // Opsional: kurangi energi kalau nebang pohon
+    //                 ChangeEnergy(-5f); 
+    //             }
+    //         }
+    //     }
+    // }
 
     // public void FinishAttack()
     // // {
