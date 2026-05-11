@@ -74,14 +74,37 @@ public class Player : MonoBehaviour
 
     void ApplyDamage()
     {
-        Collider2D[] enemies = Physics2D.OverlapCircleAll(atkPoint.position, atkRange, eLayer);
-        if (enemies.Length > 0)
-        {
-            foreach (Collider2D enemy in enemies)
-            {
-                enemies[0].GetComponent<Kriper>().ChangeHealth(-atk);
-            }
+        // Kita ambil semua collider tanpa filter layer dulu agar lebih pasti kena
+        Collider2D[] objectsHit = Physics2D.OverlapCircleAll(atkPoint.position, atkRange);
+        
+        Debug.Log("<color=white>Player:</color> Menghantam " + objectsHit.Length + " objek.");
 
+        foreach (Collider2D hit in objectsHit)
+        {
+            // JIKA YANG KENA ADALAH MUSUH
+            if (hit.CompareTag("Enemy"))
+            {
+                Kriper enemyScript = hit.GetComponent<Kriper>();
+                if (enemyScript != null)
+                {
+                    Debug.Log("<color=orange>Player:</color> Menyakiti Kriper!");
+                    enemyScript.ChangeHealth(-atk);
+                }
+            }
+            
+            // JIKA YANG KENA ADALAH POHON
+            if (hit.CompareTag("Tree"))
+            {
+                Pohon treeScript = hit.GetComponent<Pohon>();
+                if (treeScript != null)
+                {
+                    Debug.Log("<color=cyan>Player:</color> Menebang Pohon!");
+                    treeScript.ChangeHealth(-atk);
+                    
+                    // Opsional: kurangi energi kalau nebang pohon
+                    ChangeEnergy(-5f); 
+                }
+            }
         }
     }
 

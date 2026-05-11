@@ -9,6 +9,7 @@ TagManager:
   - ItemIcon
   - Bait
   - House
+  - Tree
   layers:
   - Default
   - TransparentFX
