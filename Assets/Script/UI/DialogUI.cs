@@ -23,7 +23,7 @@ public class DialogUI : MonoBehaviour
     void Start()
     {
         player = GameObject.FindWithTag("Player");
-        dial = obj.GetComponent<Interactable>().dialog;
+        // dial = obj.GetComponent<Interactable>().dialog;
     }
 
 

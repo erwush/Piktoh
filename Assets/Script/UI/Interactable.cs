@@ -24,7 +24,6 @@ public class Interactable : MonoBehaviour
             Debug.Log("skibidi");
             DialogUI.SetActive(true);
             player.GetComponent<Movement>().StopMove();
-            dialScript.obj = self;
             dialScript.dial = dialog;
             dialScript.ChangeDialog();
         }
