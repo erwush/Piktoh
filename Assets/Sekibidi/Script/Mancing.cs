@@ -18,6 +18,8 @@ public class Mancing : MonoBehaviour
     public TextMeshProUGUI[] text;
     public float distanceTolerance;
     public int strikeCounter;
+    public GameObject mancingUI;
+    public GameObject pleyer;
     public AudioSource audio;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -75,6 +77,7 @@ public class Mancing : MonoBehaviour
             audio.Play();
             if (strikeCounter == 3)
             {
+                mancingUI.SetActive(false);
                 text[2].text = "Strike: " + strikeCounter;
                 strikeCounter = 0;
                 isFishing = false;
@@ -93,11 +96,13 @@ public class Mancing : MonoBehaviour
             {
                 text[1].text = "Gagal: " + failCounter;
                 failCounter = 0;
+                mancingUI.SetActive(false);
                 isFishing = false;
             }
         }
 
     }
+
 
     public void StartFishing()
     {
@@ -109,6 +114,17 @@ public class Mancing : MonoBehaviour
         strikePos = Random.Range(-xLimit, xLimit);
         strike.rectTransform.anchoredPosition = new Vector3(strikePos, strike.rectTransform.anchoredPosition.y);
         isFishing = true;
+        StartCoroutine(PlayMancing());
+
+    }
+    
+    public IEnumerator PlayMancing()
+    {
+        Animator anim = pleyer.GetComponent<Animator>();
+        anim.speed = 1f;
+           anim.Play("mancing");
+        yield return new WaitForSeconds(0.067f);
+        anim.speed = 0f;
     }
 
     public void ChangeStrike()

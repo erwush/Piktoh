@@ -226,7 +226,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2166cd48d825fc64eb8e8698dfb60545, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 3
+  health: 1
   itemKayu: {fileID: 8162576531913503484, guid: 93eb1f3d0ccebfb44a35d7c230c2b046, type: 3}
   kayu: {fileID: 11400000, guid: 28103ab1a09955e4fbe6063206d7ed4e, type: 2}
   pohon: {fileID: 1935294656414877903}
