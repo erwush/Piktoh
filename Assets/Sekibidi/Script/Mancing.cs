@@ -14,22 +14,29 @@ public class Mancing : MonoBehaviour
     public int movingState; //0 = toPositive, 1 = toNegative
     public int failCounter;
     public bool canStrike;
-    public RectTransform rect;
+    // public RectTransform rect;
     public TextMeshProUGUI[] text;
     public float distanceTolerance;
     public int strikeCounter;
     public GameObject mancingUI;
     public GameObject pleyer;
-    public AudioSource audio;
+    public AudioSource mancingAudio;
+    Animator anim;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        rect = bait.GetComponent<RectTransform>();
+        // rect = bait.GetComponent<RectTransform>();
+        pleyer.GetComponent<Animator>();
+        anim = pleyer.GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (isFishing) anim.SetBool("isMancing", true);
+        else anim.SetBool("isMancing", false);
+        
         if (isFishing && movingState == 0)
         {
             bait.rectTransform.anchoredPosition = Vector3.MoveTowards(
@@ -42,6 +49,7 @@ public class Mancing : MonoBehaviour
             {
                 movingState = 1;
             }
+
         }
 
         if (isFishing && movingState == 1)
@@ -74,13 +82,14 @@ public class Mancing : MonoBehaviour
             text[0].text = "Mantap";
             text[1].text = "Gagal: " + failCounter;
             text[2].text = "Strike: " + strikeCounter;
-            audio.Play();
+            mancingAudio.Play();
             if (strikeCounter == 3)
             {
                 mancingUI.SetActive(false);
                 text[2].text = "Strike: " + strikeCounter;
                 strikeCounter = 0;
                 isFishing = false;
+                anim.speed = 1f;    
             }
             else if (strikeCounter < 3)
             {
@@ -96,6 +105,7 @@ public class Mancing : MonoBehaviour
             {
                 text[1].text = "Gagal: " + failCounter;
                 failCounter = 0;
+                anim.speed = 1f;
                 mancingUI.SetActive(false);
                 isFishing = false;
             }
@@ -111,24 +121,27 @@ public class Mancing : MonoBehaviour
         text[0].text = "Mancing Mania?";
         text[1].text = "Gagal: " + failCounter;
         text[2].text = "Strike: " + strikeCounter;
-        strikePos = Random.Range(-xLimit, xLimit);
-        strike.rectTransform.anchoredPosition = new Vector3(strikePos, strike.rectTransform.anchoredPosition.y);
+        ChangeStrike(); 
         isFishing = true;
-        StartCoroutine(PlayMancing());
+        
 
     }
     
     public IEnumerator PlayMancing()
     {
-        Animator anim = pleyer.GetComponent<Animator>();
         anim.speed = 1f;
-           anim.Play("mancing");
-        yield return new WaitForSeconds(0.067f);
+
+        yield return new WaitForSeconds(0.125f);
+        anim.Play("idle");
+        yield return new WaitForSeconds(0.001f);
+        anim.Play("mancing");
+        yield return new WaitForSeconds(0.3f);
         anim.speed = 0f;
     }
 
     public void ChangeStrike()
     {
+        StartCoroutine(PlayMancing());
         strikePos = Random.Range(-xLimit, xLimit);
         strike.rectTransform.anchoredPosition = new Vector3(strikePos, strike.rectTransform.anchoredPosition.y);
     }
