@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 1d614e0041603c34eb12b0f7919e93a6
+guid: 50fe297dfb977dc4ea4713d2c6ae495a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4525761944241529329
-    second: jiman-side view kiri 1_20260518081109_0
+      213: -4032558323791976324
+    second: Wana- jalan kanan_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: jiman-side view kiri 1_20260518081109_0
+      name: Wana- jalan kanan_0
       rect:
         serializedVersion: 2
-        x: 305
-        y: 21
-        width: 1525
-        height: 1962
+        x: 396
+        y: 51
+        width: 1205
+        height: 1930
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f0e908f7d734131c0800000000000000
-      internalID: -4525761944241529329
+      spriteID: c78a556e1997908c0800000000000000
+      internalID: -4032558323791976324
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      jiman-side view kiri 1_20260518081109_0: -4525761944241529329
+      Wana- jalan kanan_0: -4032558323791976324
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

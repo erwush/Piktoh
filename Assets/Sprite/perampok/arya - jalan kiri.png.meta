@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 4c3e8049d2bedba458ba00e20f8ff33e
+guid: 0bf8d482da78cb54d995547df33599b4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8586241776300097221
-    second: jiman-side view kanan 2_20260518081130_0
+      213: -4661532008551246021
+    second: arya - jalan kiri_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: jiman-side view kanan 2_20260518081130_0
+      name: arya - jalan kiri_0
       rect:
         serializedVersion: 2
-        x: 218
-        y: 7
-        width: 1525
-        height: 1976
+        x: 385
+        y: 26
+        width: 1245
+        height: 1961
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b318308a89a87d880800000000000000
-      internalID: -8586241776300097221
+      spriteID: b3790390659ee4fb0800000000000000
+      internalID: -4661532008551246021
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      jiman-side view kanan 2_20260518081130_0: -8586241776300097221
+      arya - jalan kiri_0: -4661532008551246021
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

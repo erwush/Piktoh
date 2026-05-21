@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f6d7f03fe81d9b14d8526b582358eb56
+guid: 9f2111d2f184fcc42a53bccf1c73bf77
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5181391101008812343
-    second: jiman-side view kiri 2_20260518081149_0
+      213: -6173259779681778101
+    second: jiman-sideViewKanan 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,12 +46,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 1024
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: jiman-side view kiri 2_20260518081149_0
+      name: jiman-sideViewKanan 1_0
       rect:
         serializedVersion: 2
-        x: 305
-        y: 7
+        x: 218
+        y: 21
         width: 1525
-        height: 1976
+        height: 1962
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9c6effdee300818b0800000000000000
-      internalID: -5181391101008812343
+      spriteID: b468cdd00fc245aa0800000000000000
+      internalID: -6173259779681778101
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      jiman-side view kiri 2_20260518081149_0: -5181391101008812343
+      jiman-sideViewKanan 1_0: -6173259779681778101
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 2d9d78cff16b28846b8a1bfa37658672
+guid: 4f9cc9d11447cfc438d3c701aeea1b35
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6672117009207006651
-    second: NPC - Chibi dialog_20260309091232_0
+      213: -256930437481664109
+    second: jiman-kapak 1-Sheet_0
+  - first:
+      213: -8441699480778407788
+    second: jiman-kapak 1-Sheet_1
+  - first:
+      213: 8348103459239988392
+    second: jiman-kapak 1-Sheet_2
+  - first:
+      213: 8977673362579923689
+    second: jiman-kapak 1-Sheet_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +109,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: NPC - Chibi dialog_20260309091232_0
+      name: jiman-kapak 1-Sheet_0
       rect:
         serializedVersion: 2
-        x: 363
-        y: 180
-        width: 1199
-        height: 1651
+        x: 46
+        y: 158
+        width: 1740
+        height: 1697
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +124,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 54aef563ee0e763a0800000000000000
-      internalID: -6672117009207006651
+      spriteID: 3917bedd0233f6cf0800000000000000
+      internalID: -256930437481664109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jiman-kapak 1-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 2094
+        y: 158
+        width: 1823
+        height: 1697
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4908a9b5c0f09da80800000000000000
+      internalID: -8441699480778407788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jiman-kapak 1-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 4156
+        y: 158
+        width: 1697
+        height: 1697
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ac8534bddb6ad370800000000000000
+      internalID: 8348103459239988392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jiman-kapak 1-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 5845
+        y: 323
+        width: 130
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e220168b5a179c70800000000000000
+      internalID: 8977673362579923689
       vertices: []
       indices: 
       edges: []
@@ -135,7 +210,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      NPC - Chibi dialog_20260309091232_0: -6672117009207006651
+      jiman-kapak 1-Sheet_0: -256930437481664109
+      jiman-kapak 1-Sheet_1: -8441699480778407788
+      jiman-kapak 1-Sheet_2: 8348103459239988392
+      jiman-kapak 1-Sheet_3: 8977673362579923689
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
