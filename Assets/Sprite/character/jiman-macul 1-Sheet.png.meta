@@ -112,12 +112,12 @@ TextureImporter:
       name: jiman-macul 1-Sheet_0
       rect:
         serializedVersion: 2
-        x: 51
-        y: 55
-        width: 1930
-        height: 1935
+        x: 0
+        y: 0
+        width: 2047
+        height: 2048
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -134,12 +134,12 @@ TextureImporter:
       name: jiman-macul 1-Sheet_1
       rect:
         serializedVersion: 2
-        x: 2071
-        y: 55
-        width: 2017
-        height: 1816
+        x: 2065
+        y: 0
+        width: 2045
+        height: 2048
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -156,12 +156,12 @@ TextureImporter:
       name: jiman-macul 1-Sheet_2
       rect:
         serializedVersion: 2
-        x: 4147
-        y: 55
-        width: 1998
-        height: 1935
+        x: 4115
+        y: 0
+        width: 2064
+        height: 2048
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -178,12 +178,12 @@ TextureImporter:
       name: jiman-macul 1-Sheet_3
       rect:
         serializedVersion: 2
-        x: 6167
-        y: 63
-        width: 1566
-        height: 1969
+        x: 6124
+        y: 0
+        width: 1734
+        height: 2048
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -200,7 +200,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5ebc8caa7bb67314abb1f79ffd74b9a6
     internalID: 0
     vertices: []
     indices: 
@@ -214,6 +214,7 @@ TextureImporter:
       jiman-macul 1-Sheet_1: -2717630677873206348
       jiman-macul 1-Sheet_2: -4027906765817578467
       jiman-macul 1-Sheet_3: 947323702592503773
+      jiman-macul 1-Sheet_4: -737063702
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
