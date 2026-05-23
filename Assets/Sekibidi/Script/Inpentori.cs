@@ -28,6 +28,7 @@ public class Inpentori : MonoBehaviour
     private YuAi YuAi;
     public GameObject inven;
     public Button[] slotBtn;
+    public bool isEat;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

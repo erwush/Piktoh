@@ -15,20 +15,20 @@ MonoBehaviour:
   dialogCount: 4
   currentDial: 0
   nama:
-  - Owobarp
-  - Owobarp
-  - Owobarp
-  - Owobarp
+  - Pemberi Biji
+  - Pemberi Biji
+  - Pemberi Biji
+  - Pemberi Biji
   text:
-  - Aku punya 4 biji
-  - Mau 3 gk?
-  - Nih
-  - Kukasih Biji Kibidi
+  - Hai, saya ada biji
+  - Aku akan memberimu 3
+  - Ini dia
+  - Biji Kibidi
   avatar:
-  - {fileID: 21300000, guid: aee0566c3816bea4780052fca0bf3a8d, type: 3}
-  - {fileID: 21300000, guid: aee0566c3816bea4780052fca0bf3a8d, type: 3}
-  - {fileID: 21300000, guid: aee0566c3816bea4780052fca0bf3a8d, type: 3}
-  - {fileID: 21300000, guid: aee0566c3816bea4780052fca0bf3a8d, type: 3}
+  - {fileID: 21300000, guid: e9860fb674faabb41bfbb33945573932, type: 3}
+  - {fileID: 21300000, guid: e9860fb674faabb41bfbb33945573932, type: 3}
+  - {fileID: 21300000, guid: e9860fb674faabb41bfbb33945573932, type: 3}
+  - {fileID: 21300000, guid: e9860fb674faabb41bfbb33945573932, type: 3}
   typingSpeed: 0.01
   isItem: 1
   itemCount: 3

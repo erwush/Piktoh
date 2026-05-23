@@ -1,32 +1,61 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class Movement : MonoBehaviour
 {
-
-    public InputActionReference input;
+    public float speed = 5f;
     public bool canMove;
-    public float spd;
-    public Rigidbody2D rb;
-    
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    Vector2 moveDir;
+    Rigidbody2D rb;
+    Animator anim;
+
+    int direction;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-
+        anim = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
+    void Update()
+    {
+        moveDir.x = Input.GetAxisRaw("Horizontal");
+        moveDir.y = Input.GetAxisRaw("Vertical");
+
+        moveDir.Normalize();
+
+        // cek arah dominan
+        if (moveDir != Vector2.zero)
+        {
+            if (Mathf.Abs(moveDir.x) > Mathf.Abs(moveDir.y))
+            {
+                // kiri kanan
+                if (moveDir.x > 0)
+                    direction = 3; // right
+                else
+                    direction = 2; // left
+            }
+            else
+            {
+                // atas bawah
+                if (moveDir.y > 0)
+                    direction = 1; // up
+                else
+                    direction = 0; // down
+            }
+        }
+
+        anim.SetInteger("Direction", direction);
+        anim.SetBool("IsMoving", moveDir != Vector2.zero);
+    }
+
     void FixedUpdate()
     {
         if (canMove)
         {
-            Vector2 direction = input.action.ReadValue<Vector2>();
-            rb.linearVelocity = direction.normalized * spd;
+            rb.linearVelocity = moveDir * speed;
         }
-
     }
-    
+
     public void StopMove()
     {
         canMove = false;
