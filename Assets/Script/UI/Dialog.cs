@@ -6,7 +6,7 @@ public class Dialog : ScriptableObject
     public int dialogCount;
     public int currentDial;
     public string[] nama;
-    public string[] text;
+    [TextArea(1, 50)] public string[] text;
     public Sprite[] avatar;
     public float typingSpeed;
     public bool isItem;

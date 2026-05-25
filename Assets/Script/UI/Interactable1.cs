@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Interactable : MonoBehaviour
+public class Interactable1 : MonoBehaviour
 {
     public bool inArea;
     public GameObject DialogUI;
@@ -10,6 +10,8 @@ public class Interactable : MonoBehaviour
     public GameObject keybind;
     public YuAi yuai;
     public GameObject player;
+    public MainMenu mainMenu;
+    public string scene;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -21,13 +23,26 @@ public class Interactable : MonoBehaviour
     {
         if (inArea && Input.GetButtonDown("Interact"))
         {
-            Debug.Log("skibidi");
-            DialogUI.SetActive(true);
-            player.GetComponent<Movement>().StopMove();
-            dialScript.dial = dialog;
-            dialScript.ChangeDialog();
+            // Debug.Log("skibidi");
+            Dialog();
         }
     }
+    
+    public void Dialog()
+    {
+           DialogUI.SetActive(true);
+            // player.GetComponent<Movement>().StopMove();
+            dialScript.dial = dialog;
+            if (dialog.currentDial != dialog.dialogCount)
+            {
+                dialScript.ChangeDialog();
+            }
+            else
+            {
+                mainMenu.GoToScene(scene);
+            }
+    }
+    
 
 
 
