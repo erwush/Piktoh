@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class BatangPanas : MonoBehaviour
 {
- 
+    public static BatangPanas instance;
     public int activeSlot;
     public int maxSlot;
     public Image[] slotImg;
@@ -13,6 +13,11 @@ public class BatangPanas : MonoBehaviour
     void Start()
     {
 
+    }
+
+    private void Awake()
+    {
+        instance = this;
     }
 
     // Update is called once per frame

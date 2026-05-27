@@ -1365,7 +1365,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &5813572881531673503
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1401,6 +1401,7 @@ MonoBehaviour:
   idTutorialUnik: 
   isiDeskripsi: 
   hurufTombol: E
+  tutorialBerikutnya: {fileID: 0}
 --- !u!1 &8614630751426215402
 GameObject:
   m_ObjectHideFlags: 0
