@@ -16,12 +16,14 @@ public class Inpentori : MonoBehaviour
     public Image[] slot;
     public TextMeshProUGUI[] stackCount;
     public bool isOpenedOnce;
+    public Animator planim;
     public GameObject inv;
     public Scrollbar scrollBar;
     public Button[] dropButton;
     public Button[] useButton;
     private bool isMoving;
     private bool isSelecting;
+    private bool justEat;
     private Player pleyer;
     private int currentSelected;
     public SlotInpen[] slotInpen;
@@ -44,6 +46,7 @@ public class Inpentori : MonoBehaviour
         YuAi = GameObject.Find("Mekanik").GetComponent<YuAi>();
         //find tag player;
         pleyer = GameObject.FindWithTag("Player").GetComponent<Player>();
+        planim = pleyer.GetComponent<Animator>();
     }
 
     void Update()
@@ -88,11 +91,13 @@ public class Inpentori : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         inven.GetComponent<Animator>().speed = 0;
         isOpenedOnce = true;
+        justEat = false;
         isMoving = false;
     }
 
     IEnumerator CloseInventory()
     {
+        
         isMoving = true;
         inven.GetComponent<Animator>().speed = 1;
         inven.GetComponent<Animator>().Play("Close");
@@ -100,6 +105,13 @@ public class Inpentori : MonoBehaviour
         inv.SetActive(false);
         scrollBar.value = 1;
         isMoving = false;
+        if (justEat)
+        {
+            planim.SetBool("isEating", true);
+        }
+        yield return new WaitForSeconds(0.5f);
+        planim.SetBool("isEating", false);
+        justEat = false;
     }
 
     public void ToggleInventory()
@@ -147,6 +159,7 @@ public class Inpentori : MonoBehaviour
         {
             item[id].itemCount--;
             stackCount[id].text = item[id].itemCount.ToString();
+            justEat = true;
             pleyer.ChangeEnergy(50f);
             pleyer.ChangeHealth(0.3f);
         }

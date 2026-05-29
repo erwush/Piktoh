@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,7 +10,8 @@ public class Player : MonoBehaviour
     public float maxEnergy = 100;
     public Image healthBar;
     public Image energyBar;
-    
+    public Animator anim;
+
     [Header("Combat Settings")]
     public float atkSpd = 0.5f;
     public float atk;
@@ -24,12 +26,13 @@ public class Player : MonoBehaviour
     private float nebangTimer;
 
     private BatangPanas hotbar;
-    
+
     void Start()
     {
         health = maxHealth;
         energy = maxEnergy;
         hotbar = GetComponent<BatangPanas>();
+        anim = GetComponent<Animator>();
     }
 
     void Update()
@@ -44,7 +47,7 @@ public class Player : MonoBehaviour
         {
             atkTimer = atkSpd;
             Attack();
-        } 
+        }
 
         if (nebangTimer <= 0 && Input.GetKeyDown(KeyCode.E) && hotbar.activeSlot == 1)
         {
@@ -78,9 +81,9 @@ public class Player : MonoBehaviour
     void ApplyDamage()
     {
         Collider2D[] enemies = Physics2D.OverlapCircleAll(atkPoint.position, atkRange, eLayer);
-        
         foreach (Collider2D enemy in enemies)
         {
+            StartCoroutine(AttackAnim());
             Kriper kriperScript = enemy.GetComponent<Kriper>();
             if (kriperScript != null)
             {
@@ -88,13 +91,13 @@ public class Player : MonoBehaviour
             }
         }
     }
-    
+
     void ApplyNebang()
     {
         Collider2D[] trees = Physics2D.OverlapCircleAll(atkPoint.position, atkRange, treeLayer);
-        
         foreach (Collider2D tree in trees)
         {
+            StartCoroutine(NebangAnim());
             Pohon pohonScript = tree.GetComponent<Pohon>();
             if (pohonScript != null)
             {
@@ -104,7 +107,22 @@ public class Player : MonoBehaviour
             }
         }
     }
-    
+
+    public IEnumerator AttackAnim()
+    {
+        anim.SetBool("isAttack", true);
+        yield return new WaitForSeconds(0.5f);
+        anim.SetBool("isAttack", false);
+    }
+
+
+    public IEnumerator NebangAnim()
+    {
+        anim.SetBool("isNebang", true);
+        yield return new WaitForSeconds(0.5f);
+        anim.SetBool("isNebang", false);
+    }
+
     void OnDrawGizmosSelected()
     {
         if (atkPoint != null)
