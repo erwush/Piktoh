@@ -16,6 +16,12 @@ public class tutorial : MonoBehaviour
     public string isiDeskripsi; 
     public string hurufTombol = "E"; 
 
+    // TAMBAHKAN INI: Fitur cek item dinamis dari Inspector
+    [Header("Kondisi Pegang Item")]
+    public bool butuhItemSpesifik = false;
+    [Tooltip("0=Pedang, 1=Kapak, 2=Beliung, 3=Cangkul, 4=Pancingan")]
+    public int idSlotHarusDipegang = 0;
+
     [Header("Sistem Rantai (Urutan)")]
     public tutorial tutorialBerikutnya;
 
@@ -54,7 +60,6 @@ public class tutorial : MonoBehaviour
             panelSingle.gameObject.SetActive(true);
             panelWASD.gameObject.SetActive(false);
             
-            // SUDAH DISESUAIKAN: Mencari 'Image/Text (TMP)' dan 'deskripsi' sesuai gambar prefab lu
             panelSingle.Find("Image/Text (TMP)").GetComponent<TextMeshProUGUI>().text = hurufTombol;
             panelSingle.Find("deskripsi").GetComponent<TextMeshProUGUI>().text = isiDeskripsi;
         }
@@ -63,7 +68,6 @@ public class tutorial : MonoBehaviour
             panelSingle.gameObject.SetActive(false);
             panelWASD.gameObject.SetActive(true);
 
-            // SUDAH DISESUAIKAN: Mencari 'deskripsi' di dalam Panel_WASD sesuai gambar prefab lu
             panelWASD.Find("deskripsi").GetComponent<TextMeshProUGUI>().text = isiDeskripsi;
         }
     }
@@ -81,23 +85,19 @@ public class tutorial : MonoBehaviour
             }
             else if (jenisTutorial == TipeTutorial.SingleKey)
             {
+                // 1. Ambil slot aktif dari BatangPanas yang sudah diperbaiki
                 int slotGenggam = BatangPanas.instance != null ? BatangPanas.instance.activeSlot : -1;
 
-                if (idTutorialUnik == "TutorTebang") 
+                // 2. LOGIKA BARU: Jika butuh item tapi slot player tidak pas, KODE DI BAWAHNYA DIABAIKAN (Tutorial Gak Bakal Ilang!)
+                if (butuhItemSpesifik && slotGenggam != idSlotHarusDipegang)
                 {
-                    if (Input.GetKeyDown(KeyCode.E) && slotGenggam == 1) SelesaikanTutorial();
+                    return; 
                 }
-                else if (idTutorialUnik == "TutorTanam" || idTutorialUnik == "TutorCangkul") 
+
+                // 3. Jika slot sudah sesuai (atau tidak butuh item), cek tombol eksekusi
+                if (idTutorialUnik == "TutorSerangBabi") 
                 {
-                    if (Input.GetKeyDown(KeyCode.E) && slotGenggam == 3) SelesaikanTutorial();
-                }
-                else if (idTutorialUnik == "TutorMancing") 
-                {
-                    if (Input.GetKeyDown(KeyCode.E) && slotGenggam == 4) SelesaikanTutorial();
-                }
-                else if (idTutorialUnik == "TutorSerangBabi") 
-                {
-                    if (Input.GetMouseButtonDown(0) && slotGenggam == 0) SelesaikanTutorial();
+                    if (Input.GetMouseButtonDown(0)) SelesaikanTutorial();
                 }
                 else if (idTutorialUnik == "TutorRumah") 
                 {

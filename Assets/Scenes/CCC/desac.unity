@@ -500,6 +500,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1001 &35666306
 PrefabInstance:
@@ -589,6 +591,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1 &48192355 stripped
 GameObject:
@@ -618,6 +622,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1001 &50734987
 PrefabInstance:
@@ -772,6 +778,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1001 &74046688
 PrefabInstance:
@@ -921,6 +929,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1001 &92914696
 PrefabInstance:
@@ -1010,6 +1020,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1001 &93710056
 PrefabInstance:
@@ -1159,6 +1171,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1001 &100682944
 PrefabInstance:
@@ -1248,6 +1262,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1 &101409549 stripped
 GameObject:
@@ -1277,6 +1293,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1 &113140222 stripped
 GameObject:
@@ -1306,6 +1324,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1 &115749771
 GameObject:
@@ -1502,6 +1522,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1 &130675077 stripped
 GameObject:
@@ -1531,6 +1553,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1001 &131321763
 PrefabInstance:
@@ -1620,6 +1644,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1 &131702473
 GameObject:
@@ -1931,6 +1957,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1 &146827745
 GameObject:
@@ -3316,6 +3344,8 @@ MonoBehaviour:
   idTutorialUnik: TutorQuest
   isiDeskripsi: untuk melihat misi
   hurufTombol: Q
+  butuhItemSpesifik: 0
+  idSlotHarusDipegang: 0
   tutorialBerikutnya: {fileID: 0}
 --- !u!1001 &216258308
 PrefabInstance:
@@ -3642,6 +3672,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1 &233670914
 GameObject:
@@ -3939,6 +3971,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1001 &258135993
 PrefabInstance:
@@ -4028,6 +4062,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1001 &282830709
 PrefabInstance:
@@ -4411,6 +4447,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1 &321539124
 GameObject:
@@ -4788,6 +4826,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1 &359403000 stripped
 GameObject:
@@ -4817,6 +4857,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1001 &360749715
 PrefabInstance:
@@ -4906,6 +4948,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1 &369942956
 GameObject:
@@ -5116,6 +5160,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1001 &390681792
 PrefabInstance:
@@ -5412,6 +5458,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1 &414724413
 GameObject:
@@ -5664,6 +5712,8 @@ MonoBehaviour:
   idTutorialUnik: TutorJalan
   isiDeskripsi: Untuk Jalan
   hurufTombol: E
+  butuhItemSpesifik: 0
+  idSlotHarusDipegang: 0
   tutorialBerikutnya: {fileID: 1735716682}
 --- !u!1001 &432304950
 PrefabInstance:
@@ -5753,6 +5803,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1001 &439133921
 PrefabInstance:
@@ -6196,6 +6248,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1 &474976019
 GameObject:
@@ -6455,6 +6509,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1 &504374861
 GameObject:
@@ -6571,6 +6627,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1 &520399535
 GameObject:
@@ -7068,6 +7126,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1 &597163976
 GameObject:
@@ -7184,6 +7244,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1001 &606898485
 PrefabInstance:
@@ -7470,6 +7532,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1 &625570082
 GameObject:
@@ -7587,6 +7651,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1 &639764194
 GameObject:
@@ -7790,6 +7856,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1 &649795001 stripped
 GameObject:
@@ -7814,6 +7882,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1 &659547381
 GameObject:
@@ -7975,6 +8045,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1001 &713723111
 PrefabInstance:
@@ -8064,6 +8136,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1 &734298831 stripped
 GameObject:
@@ -8093,6 +8167,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1001 &746155025
 PrefabInstance:
@@ -8182,6 +8258,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1 &759672792
 GameObject:
@@ -8358,6 +8436,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1001 &765673639
 PrefabInstance:
@@ -8918,6 +8998,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1001 &790999498
 PrefabInstance:
@@ -9376,6 +9458,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1 &838153352
 GameObject:
@@ -9492,6 +9576,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1 &850856878
 GameObject:
@@ -9608,6 +9694,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1 &873911112
 GameObject:
@@ -9724,6 +9812,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1 &885237853 stripped
 GameObject:
@@ -9753,6 +9843,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1 &895937420
 GameObject:
@@ -10250,6 +10342,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1 &967774979 stripped
 GameObject:
@@ -10279,6 +10373,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1 &969665211 stripped
 GameObject:
@@ -10308,6 +10404,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1 &970121507 stripped
 GameObject:
@@ -10337,6 +10435,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1001 &996621143
 PrefabInstance:
@@ -10486,6 +10586,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1 &1022264216
 GameObject:
@@ -10662,6 +10764,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1 &1025940184
 GameObject:
@@ -10925,6 +11029,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1001 &1039735213
 PrefabInstance:
@@ -11014,6 +11120,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1001 &1039884780
 PrefabInstance:
@@ -11103,6 +11211,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1 &1040376284 stripped
 GameObject:
@@ -11132,6 +11242,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1001 &1064882107
 PrefabInstance:
@@ -11321,6 +11433,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1 &1072811337
 GameObject:
@@ -11524,6 +11638,8 @@ MonoBehaviour:
   idTutorialUnik: mancing
   isiDeskripsi: Ambil pancingan dan tekan untuk memancing
   hurufTombol: E
+  butuhItemSpesifik: 0
+  idSlotHarusDipegang: 0
   tutorialBerikutnya: {fileID: 0}
 --- !u!1 &1104106953
 GameObject:
@@ -11700,6 +11816,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1 &1125898168 stripped
 GameObject:
@@ -11729,6 +11847,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1001 &1126104152
 PrefabInstance:
@@ -11818,6 +11938,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1 &1127254431
 GameObject:
@@ -12255,6 +12377,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1 &1186041690 stripped
 GameObject:
@@ -12284,6 +12408,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1001 &1188967193
 PrefabInstance:
@@ -12373,6 +12499,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1001 &1196606512
 PrefabInstance:
@@ -12549,6 +12677,8 @@ MonoBehaviour:
   idTutorialUnik: menanam
   isiDeskripsi: Untuk cangkul
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 3
   tutorialBerikutnya: {fileID: 0}
 --- !u!61 &1207169064
 BoxCollider2D:
@@ -12624,6 +12754,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1 &1210123994
 GameObject:
@@ -12800,6 +12932,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1 &1220917128
 GameObject:
@@ -13090,6 +13224,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1 &1260063062
 GameObject:
@@ -13217,6 +13353,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1 &1274630264
 GameObject:
@@ -13445,6 +13583,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1001 &1277969705
 PrefabInstance:
@@ -13534,6 +13674,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1001 &1303180723
 PrefabInstance:
@@ -13943,6 +14085,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1001 &1347752326
 PrefabInstance:
@@ -14032,6 +14176,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1 &1348397057 stripped
 GameObject:
@@ -14061,6 +14207,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1 &1354432739
 GameObject:
@@ -14324,6 +14472,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1001 &1388858578
 PrefabInstance:
@@ -14413,6 +14563,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1 &1389270786
 GameObject:
@@ -14589,6 +14741,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1 &1401569668
 GameObject:
@@ -14790,6 +14944,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1 &1420409141
 GameObject:
@@ -14966,6 +15122,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1 &1436388163
 GameObject:
@@ -15277,6 +15435,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1001 &1474554974
 PrefabInstance:
@@ -15426,6 +15586,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1001 &1482674863
 PrefabInstance:
@@ -15590,6 +15752,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1 &1490632895
 GameObject:
@@ -15706,6 +15870,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1 &1508800344
 GameObject:
@@ -16044,6 +16210,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1 &1549826226 stripped
 GameObject:
@@ -16073,6 +16241,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1001 &1553820521
 PrefabInstance:
@@ -16162,6 +16332,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1001 &1555972767
 PrefabInstance:
@@ -16251,6 +16423,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1 &1557092710
 GameObject:
@@ -16680,6 +16854,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1001 &1575557125
 PrefabInstance:
@@ -16769,6 +16945,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1001 &1577506414
 PrefabInstance:
@@ -16858,6 +17036,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1 &1585701678
 GameObject:
@@ -17143,6 +17323,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1 &1613771949
 GameObject:
@@ -18051,6 +18233,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1001 &1703966715
 PrefabInstance:
@@ -18200,6 +18384,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1 &1717305618
 GameObject:
@@ -18550,6 +18736,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1 &1735716680
 GameObject:
@@ -18601,6 +18789,8 @@ MonoBehaviour:
   idTutorialUnik: TutorInpen
   isiDeskripsi: untuk membuka tas
   hurufTombol: B
+  butuhItemSpesifik: 0
+  idSlotHarusDipegang: 0
   tutorialBerikutnya: {fileID: 214969961}
 --- !u!1 &1739718047
 GameObject:
@@ -18783,6 +18973,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1001 &1745350599
 PrefabInstance:
@@ -18872,6 +19064,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1 &1745909174 stripped
 GameObject:
@@ -18901,6 +19095,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1 &1750200219 stripped
 GameObject:
@@ -18930,6 +19126,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1 &1753765838
 GameObject:
@@ -19235,6 +19433,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1001 &1794323695
 PrefabInstance:
@@ -19324,6 +19524,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1 &1796592847
 GameObject:
@@ -19593,6 +19795,8 @@ MonoBehaviour:
   idTutorialUnik: jalan
   isiDeskripsi: Untuk Jalan
   hurufTombol: E
+  butuhItemSpesifik: 0
+  idSlotHarusDipegang: 0
   tutorialBerikutnya: {fileID: 0}
 --- !u!1 &1824533797
 GameObject:
@@ -19906,6 +20110,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1001 &1852717307
 PrefabInstance:
@@ -19995,6 +20201,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1001 &1858210809
 PrefabInstance:
@@ -20084,6 +20292,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1 &1875479880
 GameObject:
@@ -20260,6 +20470,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1 &1876332934
 GameObject:
@@ -20583,6 +20795,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1001 &1890667596
 PrefabInstance:
@@ -20672,6 +20886,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1 &1892046267
 GameObject:
@@ -21019,6 +21235,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1 &1918761001
 GameObject:
@@ -21468,6 +21686,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1 &1948535389 stripped
 GameObject:
@@ -21497,6 +21717,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1001 &1957102623
 PrefabInstance:
@@ -21651,6 +21873,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1 &1980531044
 GameObject:
@@ -22121,6 +22345,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1001 &2041160029
 PrefabInstance:
@@ -22210,6 +22436,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1001 &2042382251
 PrefabInstance:
@@ -22359,6 +22587,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1001 &2047395029
 PrefabInstance:
@@ -22448,6 +22678,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1001 &2050244680
 PrefabInstance:
@@ -22597,6 +22829,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1001 &2055420975
 PrefabInstance:
@@ -22806,6 +23040,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1001 &2086301112
 PrefabInstance:
@@ -22955,6 +23191,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1 &2111808113 stripped
 GameObject:
@@ -22984,6 +23222,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1 &2133044013
 GameObject:
@@ -23100,6 +23340,8 @@ MonoBehaviour:
   idTutorialUnik: menebang
   isiDeskripsi: Untuk menebang
   hurufTombol: E
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
 --- !u!1 &2119627027471441
 GameObject:
