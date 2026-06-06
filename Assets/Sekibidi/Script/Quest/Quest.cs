@@ -7,5 +7,14 @@ public class Quest : ScriptableObject
     public string displayName;
     public string desc;
     public Vector3 pos;
+    public QuestStatus status;
 
+}
+
+
+public enum QuestStatus
+{
+    Locked,
+    Active,
+    Completed,
 }
