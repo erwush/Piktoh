@@ -9,6 +9,9 @@ public class Quest : ScriptableObject
     public Vector3 pos;
     public QuestStatus status;
 
+    public int currentAmount;
+    public int targetAmount;
+
 }
 
 

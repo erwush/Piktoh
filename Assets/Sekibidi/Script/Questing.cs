@@ -6,7 +6,7 @@ public class Questing : MonoBehaviour
     // Singleton: Supaya script lain bisa panggil lewat 'Questing.Instance'
     public static Questing Instance;
 
-    public List<Quest> daftarMisi = new List<Quest>();
+    public List<Quest> daftarMisi = new List<Quest>(); 
     public int indeksMisiAktif = 0;
     public QuestUI questUI; 
 
@@ -53,19 +53,21 @@ public class Questing : MonoBehaviour
     // ========================================================
     // SATU-SATUNYA FUNGSI UNTUK MENERIMA LAPORAN DARI MANAPUN
     // ========================================================
-    public void LaporkanProgress(string idAksi)
+    public void LaporkanProgress(string idAksi, int jumlah = 1)
+{
+    if (indeksMisiAktif >= daftarMisi.Count) return;
+
+    Quest quest = daftarMisi[indeksMisiAktif];
+
+    if (quest.codeName != idAksi) return;
+
+    quest.currentAmount += jumlah;
+
+    if (quest.currentAmount >= quest.targetAmount)
     {
-        if (indeksMisiAktif >= daftarMisi.Count) return;
-
-        Quest misiSekarang = daftarMisi[indeksMisiAktif];
-        if (misiSekarang == null) return;
-
-        // JIKA KATA KUNCI YANG DILAPORKAN COCOK DENGAN CODENAME MISI SAAT INI
-        if (misiSekarang.codeName == idAksi)
-        {
-            SelesaikanMisiAktif();
-        }
+        SelesaikanMisiAktif();
     }
+}
 
     private void SelesaikanMisiAktif()
     {
