@@ -5,7 +5,7 @@ public class Quest : ScriptableObject
 {
     public string codeName;
     public string displayName;
-    public string desc;
+    [TextArea(3,50)]public string desc;
     public Vector3 pos;
     public QuestStatus status;
 

@@ -13,4 +13,5 @@ public class Dialog : ScriptableObject
     public int itemCount;
     public Item givenItem;
     public System.Action function;
+public string codeName;
 }
