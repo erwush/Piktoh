@@ -91,7 +91,6 @@ public class Player : MonoBehaviour
             }
         }
     }
-
     void ApplyNebang()
     {
         Collider2D[] trees = Physics2D.OverlapCircleAll(atkPoint.position, atkRange, treeLayer);
