@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa9099ac61f6e9a4f94ee7aeb070e57d, type: 3}
+  m_Name: pria 1
+  m_EditorClassIdentifier: 
+  dialogCount: 12
+  currentDial: 0
+  nama:
+  - Jiman
+  - Seno
+  - Jiman
+  - Seno
+  - Jiman
+  - Seno
+  - Jiman
+  - Seno
+  - Jiman
+  - Seno
+  - Jiman
+  - Seno
+  text:
+  - (Berhenti di dekat pagar bambu, menyapa dengan suara beratnya) "Kulonuwun...
+    Wah, pakan kambingnya segar sekali itu, Seno. Jam segini baru selesai ngarit?"
+  - (Menoleh, langsung menancapkan aritnya ke gedebang pisang lalu membungkuk hormat)
+    "Eh, Pak Kades. Monggo, Pak. Nggih, Pak, tadi agak siang nyari rumputnya ke dekat
+    hutan jati, makanya baru sempat dicacah sore ini."
+  - (Melangkah mendekat sambil menepuk salah satu tiang kandang) "Kambing-kambingmu
+    kelihatan gemuk dan sehat ya. Tapi ndak apa-apa, yang penting kandangnya harus
+    sering diperiksa kuncinya, Sen."
+  - (Agak heran) "Wonten menopo (ada apa), Pak Kades? Kok tumben Bapak ngingatin
+    soal kunci kandang? Apa ada kabar kurang baik?"
+  - Wajahnya berubah agak serius) "Itu lho, kemarin malam Kang jaya di dusun sebelah
+    curhat ke saya. Dua ekor ayam jagonya hilang misterius. Takutnya ada maling ternak
+    yang mulai masuk ke wilayah desa kita."
+  - '"Gusti... kok tega benar ya, Pak. Padahal zaman lagi susah begini. Lalu bagaimana
+    antisipasinya dari pihak desa, Pak?"'
+  - '"Nah, justru itu saya keliling sore ini. Nanti malam kan jadwal rondamu toh?
+    Saya mau titip pesan, tolong nanti pas keliling kampung, ronda malamnya agak
+    diketatkan. Jangan cuma nongkrong di pos sambil main kartu."'
+  - '"Nggih, siap, Pak Jiman. Kebetulan nanti malam saya ronda bareng Kang Darso
+    sama Lek Min. Nanti saya sampaikan ke mereka biar kita kelilingnya dibagi dua
+    tim."'
+  - (Tersenyum puas sambil menepuk pundak Seno) "Bagus, begitu baru namanya pemuda
+    andalan desa. Jaga keamanan kampung kita bareng-bareng ya."
+  - '"Siap, Pak Kades. Oh iya, Pak, apa ndak mampir dulu? Kebetulan wedang kopi buatan
+    istri saya baru saja matang di dapur."'
+  - '"Matur nuwun, Sen, tapi ndak usah. Ini sudah hampir magrib, saya harus segera
+    ke masjid buat jamaah. Sing penting pesanku tadi diingat ya."'
+  - '"Nggih, Pak Jiman. Pasti dilaksanakan. Monggo, Pak, hati-hati di jalan."'
+  avatar:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  typingSpeed: 0
+  isItem: 0
+  itemCount: 0
+  givenItem: {fileID: 0}
+  codeName: 
