@@ -109,6 +109,7 @@ public class DetectorCek : MonoBehaviour
 
             // 4. Pastikan mode gambarnya simple (tidak memotong)
             visualRumah.drawMode = SpriteDrawMode.Simple;
+
         }
 
         // Matikan teks agar tidak melayang di atas rumah yang sudah jadi
@@ -119,6 +120,10 @@ public class DetectorCek : MonoBehaviour
 
         // Matikan detektor biru (objek ini)
         Debug.Log("Pembangunan Selesai Jozz!");
+        if (Questing.Instance.daftarMisi[2].status == QuestStatus.Active) Questing.Instance.LaporkanProgress(2, 1);
+        else if (Questing.Instance.daftarMisi[4].status == QuestStatus.Active) Questing.Instance.LaporkanProgress(4, 1);
+        else if (Questing.Instance.daftarMisi[6].status == QuestStatus.Active) Questing.Instance.LaporkanProgress(6, 1);
+        else if(Questing.Instance.daftarMisi[10].status == QuestStatus.Active) Questing.Instance.LaporkanProgress(10, 1);
         this.gameObject.SetActive(false); 
     }
 }

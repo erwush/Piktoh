@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 777843644f5ba2b4cb5db7afec3b8d18, type: 3}
   m_Name: Quest8
   m_EditorClassIdentifier: 
-  codeName: quest6
-  displayName: Istirahat
-  desc: Pergi Ketempat Mancing
+  questId: 8
+  displayName: Penuhi Keinginan Dewi Sukardadu
+  desc: Cari 3 ikan untuk dewi
   pos: {x: 0, y: 0, z: 0}
   status: 0
   currentAmount: 0
-  targetAmount: 0
+  targetAmount: 3

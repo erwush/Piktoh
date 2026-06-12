@@ -48,6 +48,7 @@ public class Kriper : MonoBehaviour
         {
             GameObject drop = Instantiate(itemDrop, transform.position, Quaternion.identity);
             drop.GetComponent<DroppedItem>().data = itemData;
+            if(Questing.Instance.daftarMisi[5].status == QuestStatus.Active) Questing.Instance.LaporkanProgress(5, 1);
             Destroy(gameObject);
         }
         if(amount < 0)

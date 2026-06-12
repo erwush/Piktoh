@@ -12,17 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 777843644f5ba2b4cb5db7afec3b8d18, type: 3}
   m_Name: Quest2
   m_EditorClassIdentifier: 
-  codeName: quest2
-  displayName: Mulai Bercocok Tanam
-  desc: '1. ambil seed dari anuan <br>
-
-    2. cangkul tanah yang sudah disiapkan<br>
-
-    3.
-    tanam biji<br>
-
-    4. makan<br>'
+  questId: 2
+  displayName: Bangun Sebuah Rumah
+  desc: Gunakan Kayu yang sudah kamu tebang untuk membangun rumah
   pos: {x: 0, y: 0, z: 0}
   status: 0
   currentAmount: 0
-  targetAmount: 0
+  targetAmount: 1

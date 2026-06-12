@@ -19,6 +19,7 @@ public class AreaMancing : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             inArea = true;
+            if(Questing.Instance.daftarMisi[7].status == QuestStatus.Active) Questing.Instance.LaporkanProgress(7, 1);
             if(pleyer == null) pleyer = collision.gameObject;
         }
     }

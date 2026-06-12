@@ -1,10 +1,15 @@
 using UnityEngine;
+using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
+
 
 public class Questing : MonoBehaviour
 {
     // Singleton: Supaya script lain bisa panggil lewat 'Questing.Instance'
     public static Questing Instance;
+    public Animator notif;
+    public bool isNotif;
 
     public List<Quest> daftarMisi = new List<Quest>(); 
     public int indeksMisiAktif = 0;
@@ -53,15 +58,15 @@ public class Questing : MonoBehaviour
     // ========================================================
     // SATU-SATUNYA FUNGSI UNTUK MENERIMA LAPORAN DARI MANAPUN
     // ========================================================
-    public void LaporkanProgress(string idAksi, int jumlah = 1)
+    public void LaporkanProgress(int idAksi, int jumlah = 1)
 {
     if (indeksMisiAktif >= daftarMisi.Count) return;
 
     Quest quest = daftarMisi[indeksMisiAktif];
 
-    if (quest.codeName != idAksi) return;
+    if (quest.questId != idAksi) return;
 
-    quest.currentAmount += jumlah;
+        quest.currentAmount += jumlah;
 
     if (quest.currentAmount >= quest.targetAmount)
     {
@@ -83,8 +88,25 @@ public class Questing : MonoBehaviour
         {
             Debug.Log("Selamat! Seluruh rangkaian misi selesai!");
         }
-
+        StartCoroutine(AnimasiNotif());
         TampilkanMisiAktif();
+    }
+    
+    private IEnumerator AnimasiNotif()
+    {
+        notif.Play("Turun");
+        yield return new WaitForSeconds(0.5f);
+        notif.speed = 0f;
+        isNotif = true;
+        if (questUI.isOpen)
+        {
+            yield return new WaitForSeconds(1.5f);
+            notif.speed = 1f;
+            notif.Play("Naik");
+            yield return new WaitForSeconds(0.5f);
+            notif.speed = 0f;
+            isNotif = false;
+        }
     }
 }
 

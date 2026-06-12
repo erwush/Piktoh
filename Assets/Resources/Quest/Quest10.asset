@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 777843644f5ba2b4cb5db7afec3b8d18, type: 3}
   m_Name: Quest10
   m_EditorClassIdentifier: 
-  codeName: quest8
-  displayName: Makan Bersama Dewi Sekardadu
-  desc: Pergi Ketempat Dewi Sekardadu Dan Makan Bersamanya
+  questId: 10
+  displayName: Lanjut Membangun desa
+  desc: Bangun Sisa dengan rumah
   pos: {x: 0, y: 0, z: 0}
   status: 0
   currentAmount: 0
-  targetAmount: 0
+  targetAmount: 6

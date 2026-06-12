@@ -162,6 +162,7 @@ public class Inpentori : MonoBehaviour
             justEat = true;
             pleyer.ChangeEnergy(50f);
             pleyer.ChangeHealth(0.3f);
+            if(Questing.Instance.daftarMisi[1].status == QuestStatus.Active) Questing.Instance.LaporkanProgress(1, 1);
         }
     }
 

@@ -93,6 +93,7 @@ public class Mancing : MonoBehaviour
                 progress.fillAmount = (float)strikeCounter / 3f;
                 isFishing = false;
                 anim.speed = 1f;
+                if(Questing.Instance.daftarMisi[8].status == QuestStatus.Active) Questing.Instance.LaporkanProgress(8, 1);
             }
             else if (strikeCounter < 3)
             {
