@@ -28,15 +28,15 @@ MonoBehaviour:
   - Jiman
   - Seno
   text:
-  - (Berhenti di dekat pagar bambu, menyapa dengan suara beratnya) "Kulonuwun...
+  - (Berhenti di dekat pagar bambu, menyapa dengan suara beratnya)<br> "Kulonuwun...
     Wah, pakan kambingnya segar sekali itu, Seno. Jam segini baru selesai ngarit?"
   - (Menoleh, langsung menancapkan aritnya ke gedebang pisang lalu membungkuk hormat)
-    "Eh, Pak Kades. Monggo, Pak. Nggih, Pak, tadi agak siang nyari rumputnya ke dekat
-    hutan jati, makanya baru sempat dicacah sore ini."
-  - (Melangkah mendekat sambil menepuk salah satu tiang kandang) "Kambing-kambingmu
+    <br> "Eh, Pak Kades. Monggo, Pak. Nggih, Pak, tadi agak siang nyari rumputnya
+    ke dekat hutan jati, makanya baru sempat dicacah sore ini."
+  - (Melangkah mendekat sambil menepuk salah satu tiang kandang) <br> "Kambing-kambingmu
     kelihatan gemuk dan sehat ya. Tapi ndak apa-apa, yang penting kandangnya harus
     sering diperiksa kuncinya, Sen."
-  - (Agak heran) "Wonten menopo (ada apa), Pak Kades? Kok tumben Bapak ngingatin
+  - (Agak heran)<br> "Wonten menopo (ada apa), Pak Kades? Kok tumben Bapak ngingatin
     soal kunci kandang? Apa ada kabar kurang baik?"
   - Wajahnya berubah agak serius) "Itu lho, kemarin malam Kang jaya di dusun sebelah
     curhat ke saya. Dua ekor ayam jagonya hilang misterius. Takutnya ada maling ternak
