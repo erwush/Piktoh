@@ -1,0 +1,120 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa9099ac61f6e9a4f94ee7aeb070e57d, type: 3}
+  m_Name: sekardadu 0
+  m_EditorClassIdentifier: 
+  dialogCount: 15
+  currentDial: 0
+  nama:
+  - Jiman
+  - Jiman
+  - .......
+  - jiman
+  - dewi sekardadu
+  - Jiman
+  - Dewi Sekardadu
+  - Jiman
+  - Dewi Sekardadu
+  - Jiman
+  - Dewi Sekardadu
+  - Jiman
+  - Dewi Sekardadu
+  - Jiman
+  - Dewi Sekardadu
+  text:
+  - '(Bicara pada dirinya sendiri dengan raut wajah terkejut)<br>
+
+    "Loh, Gusti
+    Pangeran... Siapa gerangan perempuan di atas batu itu? Berbahaya sekali! Apalagi
+    sepertinya ia sedang berbadan dua."'
+  - '(Berseru dengan suara agak keras namun sopan) <br>
+
+    "Nyuwun sewu, Nyai!
+    Mohon maaf mengganggu ketenangannya. Saya Jiman, Kepala Desa di wilayah ini.
+    Apakah Nyai tidak pusing duduk di tempat setinggi itu? Angin lembah ini lumayan
+    kencang!"'
+  - '(Membuka matanya perlahan dari pertapaannya. Ia tidak terkejut, sorot matanya
+    sangat tenang. Suaranya terdengar lembut namun menggema) <br>
+
+    "Salam sejahtera,
+    Ki Jiman. Jangan khawatirkan diriku. Angin dan sunyinya tempat ini justru menjadi
+    selimut bagi jiwa yang sedang bergejolak."'
+  - '(Menyeka keringat di dahi, masih tampak cemas)<br>
+
+    "Syukurlah kalau Nyai
+    baik-baik saja. Tapi... maaf beribu maaf, kandungan Nyai sepertinya sudah besar.
+    Batu itu licin berlumut, belum lagi cuaca yang tidak menentu. Mengapa Nyai bertapa
+    di tempat sunyi dan berbahaya seperti ini?"'
+  - '"Namaku Sekardadu. Aku memisahkan diri dari keramaian bukan untuk mencari bahaya,
+    Ki Jiman. Jabang bayi dalam rahimku ini butuh ketenangan batin. Ada doa-doa yang
+    harus kulangitkan untuknya, agar kelak ia menjadi cahaya penerang bagi banyak
+    orang, melampaui kepahitan yang kualami."'
+  - '"Gusti Putri Dewi Sekardadu... Ampuni kelancangan hamba! Hamba sungguh tidak
+    menyadari kalau Gusti Putri yang sedang duduk bertapa di sana. Jika Gusti Putri
+    berkenan, turunlah. Hamba bisa menyediakan tempat yang jauh lebih hangat dan
+    layak di balai desa."'
+  - '(Tersenyum tipis, tangannya mengelus perutnya yang membesar dengan penuh kasih
+    sayang)<br>
+
+    "Kebaikan hatimu kuterima dengan rasa syukur, Ki Jiman. Namun,
+    tempatku saat ini memang di sini, menyatu dengan kehendak semesta. Hanya saja..."'
+  - '(Kembali mendongak dengan raut khawatir)<br>
+
+    "Hanya saja apa, Gusti Putri?
+    Apakah ada yang terasa sakit? Atau adakah sesuatu yang bisa hamba bantu?"'
+  - '"Anak dalam kandunganku ini sepertinya membawa sebuah keinginan. Sejak fajar
+    tadi menyingsing, aku merasakan dorongan yang sangat kuat. Ini bukan keinginanku,
+    Ki Jiman, melainkan murni keinginan si jabang bayi."'
+  - '"Katakan saja, Gusti Putri! Sebagai Kepala Desa di tanah ini, sudah menjadi
+    kewajiban hamba untuk melayani dan menjaga tamu agung seperti panjenengan. Apa
+    gerangan yang diidamkan oleh calon bayi tersebut?"'
+  - '"Ia menginginkan sesuatu dari perairan desamu, dari aliran air di bawah batu
+    ini. Ki Jiman, maukah engkau membantuku dan anakku? Ambil kailmu, dan pancingkan
+    seekor ikan untukku."'
+  - '(Sedikit terkejut)<br>
+
+    "Memancing ikan, Gusti Putri?"'
+  - '(Mengangguk pelan)<br>
+
+    "Benar. Tapi aku tidak meminta ikan dari jala, bukan
+    pula ikan tangkapan orang lain di pasar. Aku meminta ikan yang kau pancing sendiri
+    di sungai ini, dengan tanganmu sendiri, dan dengan keikhlasan hatimu sebagai
+    seorang pemimpin yang melayani."'
+  - '(Tersenyum lega dan mengangguk mantap)<br>
+
+    "Sebuah kehormatan besar bagi
+    hamba, Gusti Putri. Jika itu yang diidamkan oleh calon penerang masa depan, hamba
+    tidak akan menunda. Hamba akan segera pulang mengambil kail pusaka hamba dan
+    memancing ikan terbaik di sungai ini untuk Gusti Putri. Mohon tunggu sebentar!"'
+  - '"Pergilah dengan tenang, Ki Jiman. Kebaikan dan keikhlasanmu hari ini akan dicatat
+    oleh semesta. Aku akan menunggumu di sini, melanjutkan doaku."'
+  avatar:
+  - {fileID: 21300000, guid: 28b5c75d7e59151448f4bb415e268398, type: 3}
+  - {fileID: 21300000, guid: 28b5c75d7e59151448f4bb415e268398, type: 3}
+  - {fileID: 21300000, guid: 4e277030be32ed14aa428447e2fb2dff, type: 3}
+  - {fileID: 21300000, guid: 28b5c75d7e59151448f4bb415e268398, type: 3}
+  - {fileID: 21300000, guid: 4e277030be32ed14aa428447e2fb2dff, type: 3}
+  - {fileID: 21300000, guid: 28b5c75d7e59151448f4bb415e268398, type: 3}
+  - {fileID: 21300000, guid: 4e277030be32ed14aa428447e2fb2dff, type: 3}
+  - {fileID: 21300000, guid: 28b5c75d7e59151448f4bb415e268398, type: 3}
+  - {fileID: 21300000, guid: 4e277030be32ed14aa428447e2fb2dff, type: 3}
+  - {fileID: 21300000, guid: 28b5c75d7e59151448f4bb415e268398, type: 3}
+  - {fileID: 21300000, guid: 4e277030be32ed14aa428447e2fb2dff, type: 3}
+  - {fileID: 21300000, guid: 28b5c75d7e59151448f4bb415e268398, type: 3}
+  - {fileID: 21300000, guid: 4e277030be32ed14aa428447e2fb2dff, type: 3}
+  - {fileID: 21300000, guid: 28b5c75d7e59151448f4bb415e268398, type: 3}
+  - {fileID: 21300000, guid: 4e277030be32ed14aa428447e2fb2dff, type: 3}
+  typingSpeed: 0
+  isItem: 0
+  itemCount: 0
+  givenItem: {fileID: 0}
+  codeName: 

@@ -17,14 +17,19 @@ public class DroppedItem : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            Debug.Log("masuk");
             for (int i = 0; i < inpen.slot.Length; i++)
             {
                 if (inpen.item[i] == data)
                 {
-                    Debug.Log("masuk");
                     inpen.item[i].itemCount++;
                     inpen.stackCount[i].text = inpen.item[i].itemCount.ToString();
+                    if(inpen.item[i].codeName == "kokkayu" && Questing.Instance.daftarMisi[0].status == QuestStatus.Active)
+                    {
+                         Questing.Instance.LaporkanProgress(0, 1);
+                    } else if(inpen.item[i].codeName == "watu" && Questing.Instance.daftarMisi[3].status == QuestStatus.Active)
+                    {
+                         Questing.Instance.LaporkanProgress(3, 1);
+                    }
                 }
             }
             Destroy(gameObject);

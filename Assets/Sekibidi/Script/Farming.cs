@@ -31,6 +31,7 @@ public class Farming : MonoBehaviour
             {
                 state = 1;
                 pleyer.energy -= 3f;
+                pleyer.GetComponent<Animator>().Play("macul");
                 sprite.sprite = spriteImg[1];
             }
             else if (state == 1)
@@ -68,6 +69,10 @@ public class Farming : MonoBehaviour
 
         }
     }
+
+
+
+
 
     private void OnTriggerEnter2D(Collider2D other)
     {

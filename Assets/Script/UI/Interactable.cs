@@ -14,6 +14,9 @@ public class Interactable : MonoBehaviour
     void Start()
     {
         self = gameObject;
+        // player = GameObject.FindWithTag("Player");
+        dialScript = GameObject.FindWithTag("Mekanik").GetComponent<DialogUI>();
+        DialogUI = dialScript.UI;
     }
 
     // Update is called once per frame

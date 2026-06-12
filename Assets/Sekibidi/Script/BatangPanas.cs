@@ -1,21 +1,29 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-
 public class BatangPanas : MonoBehaviour
 {
- 
+    // 1. TAMBAHKAN INI: Agar script lain bisa mengakses BatangPanas dengan mudah
+    public static BatangPanas instance;
+
     public int activeSlot;
     public int maxSlot;
     public Image[] slotImg;
-    public Sprite[] slotSprite; //0 = unselcted, 1 = selected
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
+    public Sprite[] slotSprite; //0 = unselected, 1 = selected
 
+    private void Awake()
+    {
+        // 2. TAMBAHKAN INI: Set variabel instance saat game mulai
+        if (instance == null)
+        {
+            instance = this;
+        }
     }
 
-    // Update is called once per frame
+    void Start()
+    {
+    }
+
     void Update()
     {
         for (int i = 0; i < maxSlot; i++)
@@ -33,7 +41,8 @@ public class BatangPanas : MonoBehaviour
                 }
             }
         }
-        //input with scroll up
+
+        // Input scroll up
         if (Input.GetAxis("Mouse ScrollWheel") > 0f)
         {
             if (activeSlot < maxSlot - 1)
@@ -41,14 +50,16 @@ public class BatangPanas : MonoBehaviour
                 activeSlot += 1;
                 slotImg[activeSlot].sprite = slotSprite[1];
                 slotImg[activeSlot - 1].sprite = slotSprite[0];
-            } else if(activeSlot == maxSlot - 1)
+            } 
+            else if(activeSlot == maxSlot - 1)
             {
                 activeSlot = 0;
                 slotImg[activeSlot].sprite = slotSprite[1];
                 slotImg[maxSlot - 1].sprite = slotSprite[0];
             }
         }
-        //input with scroll down
+
+        // Input scroll down
         if (Input.GetAxis("Mouse ScrollWheel") < 0f)
         {
             if (activeSlot > 0)
@@ -56,7 +67,8 @@ public class BatangPanas : MonoBehaviour
                 activeSlot -= 1;
                 slotImg[activeSlot].sprite = slotSprite[1];
                 slotImg[activeSlot + 1].sprite = slotSprite[0];
-            } else if(activeSlot == 0)
+            } 
+            else if(activeSlot == 0)
             {
                 activeSlot = maxSlot - 1;
                 slotImg[activeSlot].sprite = slotSprite[1];
