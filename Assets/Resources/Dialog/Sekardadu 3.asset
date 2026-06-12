@@ -1,0 +1,97 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa9099ac61f6e9a4f94ee7aeb070e57d, type: 3}
+  m_Name: Sekardadu 3
+  m_EditorClassIdentifier: 
+  dialogCount: 11
+  currentDial: 0
+  nama:
+  - Jiman
+  - Dewi Sekardadu
+  - Jiman
+  - Dewi Sekardadu
+  - Jiman
+  - Dewi Sekardadu
+  - Jiman
+  - Dewi Sekardadu
+  - Jiman
+  - Dewi Sekardadu
+  - Jiman
+  text:
+  - '(Bergegas menghampiri dengan senyum ramah, lalu menundukkan badan)<br>
+
+    "Sugeng
+    enjing, Gusti Putri. Sungguh pemandangan yang menyejukkan melihat panjenengan
+    duduk bersantai di bawah pohon beringin ini. Bagaimana kabar Gusti Putri hari
+    ini?"'
+  - '(Tersenyum cerah, membalas sapaan dengan anggun)<br>
+
+    "Selamat pagi, Ki
+    Jiman. Kabarku sangat baik. Angin pagi di desamu ini selalu berhasil mengusir
+    segala penat. Udara di sini begitu bersih dan menenangkan hati."'
+  - '"Syukurlah kalau begitu, Gusti Putri. Apakah sang jabang bayi di dalam kandungan
+    juga sehat-sehat saja? Kemarin malam angin berhembus cukup kencang, hamba sempat
+    khawatir tempat peristirahatan Gusti Putri kurang hangat."'
+  - '(Mengusap perutnya dengan penuh kasih sayang)<br>
+
+    "Anak ini sangat tenang,
+    Ki Jiman. Sepertinya ia ikut merasakan kedamaian tanah ini. Suara jangkrik dan
+    embusan angin semalam justru menjadi lagu pengantar tidur yang indah bagi kami
+    berdua. Perhatianmu dan warga desa sungguh membuatku merasa aman."'
+  - '(Menghela napas lega dan tersenyum)<br>
+
+    "Mendengarnya membuat batin hamba
+    tenteram. Oh ya, kebetulan hamba baru saja mengecek hasil kebun warga. Jika Gusti
+    Putri sedang mengidamkan buah-buahan segar atau ubi manis yang baru dicabut dari
+    tanah, hamba bisa menyuruh anak buah hamba untuk segera mengantarkannya."'
+  - '"Kebaikanmu seakan tiada habisnya, Ki Jiman. Namun untuk saat ini, melihat hamparan
+    padi yang menguning dan melihat wargamu yang rukun bekerja sudah lebih dari cukup
+    untuk mengenyangkan batinku. Kesederhanaan di desa ini adalah kemewahan yang
+    sesungguhnya."'
+  - '(Merendah sambil menggaruk tengkuknya yang tidak gatal)<br>
+
+    "Gusti Putri
+    bisa saja. Bagi kami, ini hanyalah keseharian orang kecil yang harus terus berkeringat
+    agar dapur tetap mengepul. Tentu rasanya sangat jauh berbeda dengan keindahan
+    dan kemegahan di dalam tembok keraton."'
+  - '"Di balik tembok keraton memang ada kemegahan, Ki Jiman. Tapi di tempat terbuka
+    inilah aku menemukan kemerdekaan jiwa. Pemimpin sepertimu, yang turun langsung
+    memastikan air mengalir ke sawah warganya, sama mulianya dengan seorang raja
+    yang duduk di singgasana."'
+  - '(Menunduk dalam-dalam, merasa sangat terharu dan dihargai)<br>
+
+    "Matur sembah
+    nuwun atas petuah luhurnya, Gusti Putri. Kata-kata panjenengan sungguh menjadi
+    bekal semangat bagi hamba untuk terus melayani warga desa ini dengan sebaik-baiknya."'
+  - '"Lanjutkanlah tugas muliamu, Ki Jiman. Jangan biarkan aku menunda pekerjaanmu.
+    Biarlah aku duduk di sini sebentar lagi, menyerap energi baik dari desa yang
+    subur ini.'
+  - '"Sendika dawuh, Gusti Putri. Jika demikian, hamba mohon pamit untuk melanjutkan
+    perjalanan mengecek bendungan air. Jika Gusti Putri membutuhkan sesuatu, jangan
+    sungkan memanggil hamba atau warga yang melintas."'
+  avatar:
+  - {fileID: 21300000, guid: 28b5c75d7e59151448f4bb415e268398, type: 3}
+  - {fileID: 21300000, guid: 4e277030be32ed14aa428447e2fb2dff, type: 3}
+  - {fileID: 21300000, guid: 28b5c75d7e59151448f4bb415e268398, type: 3}
+  - {fileID: 21300000, guid: 4e277030be32ed14aa428447e2fb2dff, type: 3}
+  - {fileID: 21300000, guid: 28b5c75d7e59151448f4bb415e268398, type: 3}
+  - {fileID: 21300000, guid: 4e277030be32ed14aa428447e2fb2dff, type: 3}
+  - {fileID: 21300000, guid: 28b5c75d7e59151448f4bb415e268398, type: 3}
+  - {fileID: 21300000, guid: 4e277030be32ed14aa428447e2fb2dff, type: 3}
+  - {fileID: 21300000, guid: 28b5c75d7e59151448f4bb415e268398, type: 3}
+  - {fileID: 21300000, guid: 4e277030be32ed14aa428447e2fb2dff, type: 3}
+  - {fileID: 21300000, guid: 28b5c75d7e59151448f4bb415e268398, type: 3}
+  typingSpeed: 0
+  isItem: 0
+  itemCount: 0
+  givenItem: {fileID: 0}
+  codeName: 

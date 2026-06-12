@@ -15851,6 +15851,71 @@ MonoBehaviour:
   butuhItemSpesifik: 1
   idSlotHarusDipegang: 1
   tutorialBerikutnya: {fileID: 0}
+--- !u!1001 &1649271793
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 26175591636586865, guid: 574afcc059e2f1345978883d8424a06d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 17cf7b9e5c14e5c4f9eea0e608a1742d, type: 3}
+    - target: {fileID: 2350881140181363539, guid: 574afcc059e2f1345978883d8424a06d, type: 3}
+      propertyPath: dialog
+      value: 
+      objectReference: {fileID: 11400000, guid: 84ad8d0485c4ecb4991f8878cb161c9a, type: 2}
+    - target: {fileID: 5730481925199912929, guid: 574afcc059e2f1345978883d8424a06d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 45.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5730481925199912929, guid: 574afcc059e2f1345978883d8424a06d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -21.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5730481925199912929, guid: 574afcc059e2f1345978883d8424a06d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0387
+      objectReference: {fileID: 0}
+    - target: {fileID: 5730481925199912929, guid: 574afcc059e2f1345978883d8424a06d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5730481925199912929, guid: 574afcc059e2f1345978883d8424a06d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5730481925199912929, guid: 574afcc059e2f1345978883d8424a06d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5730481925199912929, guid: 574afcc059e2f1345978883d8424a06d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5730481925199912929, guid: 574afcc059e2f1345978883d8424a06d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5730481925199912929, guid: 574afcc059e2f1345978883d8424a06d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5730481925199912929, guid: 574afcc059e2f1345978883d8424a06d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5830172202730343047, guid: 574afcc059e2f1345978883d8424a06d, type: 3}
+      propertyPath: m_Name
+      value: sekardadu
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 574afcc059e2f1345978883d8424a06d, type: 3}
 --- !u!1001 &1654653780
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32885,3 +32950,4 @@ SceneRoots:
   - {fileID: 146827746}
   - {fileID: 256281201}
   - {fileID: 1792681934}
+  - {fileID: 1649271793}
