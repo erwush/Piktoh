@@ -15,7 +15,7 @@ MonoBehaviour:
   itemId: 6
   codeName: kokkayu
   itemName: Kayu
-  itemSprite: {fileID: 21300000, guid: 450987784eb280d48b0fbd187e476546, type: 3}
+  itemSprite: {fileID: 3523003418914638203, guid: 9ac93eddb82781c49a0c6a84125144c1, type: 3}
   itemCount: 5
   isFood: 0
   isPlant: 0

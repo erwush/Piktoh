@@ -35,6 +35,7 @@ public class Questing : MonoBehaviour
         {
             if (daftarMisi[i] != null)
                 daftarMisi[i].status = (i == 0) ? QuestStatus.Active : QuestStatus.Locked;
+            daftarMisi[i].currentAmount = 0;
         }
     }
 

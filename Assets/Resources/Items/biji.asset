@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 3
   codeName: Biji
-  itemName: Biji kibidi
-  itemSprite: {fileID: 21300000, guid: 73517a7743168514bba6385e759b1f78, type: 3}
-  itemCount: 43
+  itemName: Biji Umbi
+  itemSprite: {fileID: 1523869429743019696, guid: cb0420495d2bb3a48a0753b191f985fd, type: 3}
+  itemCount: 52
   isFood: 0
   isPlant: 1

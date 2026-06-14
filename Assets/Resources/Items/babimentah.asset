@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 4
   codeName: babi
-  itemName: Item 1
+  itemName: Babi Mentah
   itemSprite: {fileID: 21300000, guid: 542affd261d30cb44857e7d9c546e9d0, type: 3}
-  itemCount: 43
+  itemCount: 53
   isFood: 1
   isPlant: 0

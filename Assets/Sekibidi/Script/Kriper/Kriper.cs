@@ -1,6 +1,6 @@
-using System;
 using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class Kriper : MonoBehaviour
 {
@@ -20,6 +20,7 @@ public class Kriper : MonoBehaviour
     public float spd;
     public float atkSpd;
     private KriperCombat combat;
+    public Image healthBar;
     private KriperMovement mvm;    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -27,12 +28,13 @@ public class Kriper : MonoBehaviour
         combat = GetComponent<KriperCombat>();
         mvm = GetComponent<KriperMovement>();
         selfSprite = GetComponent<SpriteRenderer>();
+        FindFirstObjectByType<Archer2>().AddTarget(transform);
     }
 
     // Update is called once per frame
     void Update()
     {
-
+ if (healthBar != null) healthBar.fillAmount = health / maxHealth;
     }
 
     public void ChangeHealth(float amount)
@@ -48,7 +50,8 @@ public class Kriper : MonoBehaviour
         {
             GameObject drop = Instantiate(itemDrop, transform.position, Quaternion.identity);
             drop.GetComponent<DroppedItem>().data = itemData;
-            if(Questing.Instance.daftarMisi[5].status == QuestStatus.Active) Questing.Instance.LaporkanProgress(5, 1);
+            if (Questing.Instance.daftarMisi[5].status == QuestStatus.Active) Questing.Instance.LaporkanProgress(5, 1);
+            FindFirstObjectByType<Archer2>().RemoveTarget(transform);
             Destroy(gameObject);
         }
         if(amount < 0)

@@ -59,7 +59,7 @@ public class KriperMovement : MonoBehaviour
     void Chase()
     {
 
-        if (target.position.x > target.position.x && facingDirection == -1 || target.position.x < target.position.x && facingDirection == 1)
+        if ((target.position.x > transform.position.x && facingDirection == -1) || (target.position.x < transform.position.x && facingDirection == 1))
         {
             Flip();
         }
@@ -91,6 +91,7 @@ public class KriperMovement : MonoBehaviour
 
     private void Flip()
     {
+         Debug.Log("Flip!");
         facingDirection *= -1;
         transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
     }
@@ -110,14 +111,15 @@ public class KriperMovement : MonoBehaviour
             }
             if (Vector2.Distance(transform.position, player.position) <= stat.atkRange && atkTimer <= 0)
             {
-                
+
                 ChangeState(EnemyState.Attacking);
             }
             else if (Vector2.Distance(transform.position, player.position) > stat.atkRange && enemyState != EnemyState.Attacking)
             {
-                
+
                 ChangeState(EnemyState.Chasing);
-            } else
+            }
+            else
             {
 
                 rb.linearVelocity = Vector2.zero;

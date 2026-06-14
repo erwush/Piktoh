@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 2
   codeName: Iwak
-  itemName: Item 1
+  itemName: Ikan
   itemSprite: {fileID: 21300000, guid: 3b335e3e11f7abd469021d65802fbaf7, type: 3}
   itemCount: 43
   isFood: 1

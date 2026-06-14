@@ -4,9 +4,11 @@ public class Farming : MonoBehaviour
 {
     public Player pleyer;
     public Inpentori inven;
+    public GameObject biji;
     public BatangPanas hotbar;
     public SpriteRenderer sprite;
     public Sprite[] spriteImg; //0 = unhoed, 1 = hoed
+
     public int state; //0 = unhoed, 1 = hoed, 3 = seeded b  
     public GameObject plantObj;
     private bool inArea;
@@ -25,6 +27,17 @@ public class Farming : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (state == 2 && biji != null)
+        {
+            if (biji.GetComponent<Biji>().state == 1)
+            {
+                biji.GetComponent<Transform>().position = new Vector3(transform.position.x, transform.position.y + 0.2f, transform.position.z);
+            }
+            else if (biji.GetComponent<Biji>().state == 2)
+            {
+                biji.GetComponent<Transform>().position = new Vector3(transform.position.x, transform.position.y + 0.4f, transform.position.z);
+            }
+        }
         if (inArea && Input.GetKeyDown(KeyCode.E) && hotbar.activeSlot == 3)
         {
             if (state == 0)
@@ -59,14 +72,13 @@ public class Farming : MonoBehaviour
                 {
                     inven.item[plantIdx[0]].itemCount -= 1;
                     // inven.stackCount[plantIdx[0]].text = inven.item[plantIdx[0]].itemCount.ToString();
-                    GameObject biji = Instantiate(plantObj, transform.position, Quaternion.identity);
+                    biji = Instantiate(plantObj, transform.position, Quaternion.identity);
                     state = 2;
                     biji.GetComponent<Biji>().tanah = this.gameObject.GetComponent<Farming>();
                     biji.GetComponent<Biji>().inven = inven;
                     biji.GetComponent<Biji>().hotbar = hotbar;
                 }
             }
-
         }
     }
 
@@ -80,7 +92,7 @@ public class Farming : MonoBehaviour
         {
             inArea = true;
             pleyer = other.GetComponent<Player>();
-            
+
             hotbar = other.GetComponent<BatangPanas>();
         }
     }

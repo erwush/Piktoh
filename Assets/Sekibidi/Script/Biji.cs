@@ -10,6 +10,8 @@ public class Biji : MonoBehaviour
     public BatangPanas hotbar;
     public Sprite[] spriteImg;
     public SpriteRenderer sprite;
+    public int state;
+    
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -27,11 +29,21 @@ public class Biji : MonoBehaviour
         {
             timer += Time.deltaTime;
         }
-        if (timer >= 720f)
+        if (timer <= 360f)
         {
-            canFarmed = true;
-            sprite.sprite = spriteImg[1];
+            state = 0;
+            sprite.sprite = spriteImg[0];
+            canFarmed = false;
             
+        } else if(timer > 360f && timer < 720f)
+        {
+            state = 1;
+            sprite.sprite = spriteImg[1];
+        } else
+        {
+            state = 2;
+            canFarmed = true;
+            sprite.sprite = spriteImg[2];
         }
         // if (timer <= 0)
         // {
@@ -44,6 +56,7 @@ public class Biji : MonoBehaviour
             // inven.stackCount[tanah.plantIdx[0]].text = inven.item[tanah.plantIdx[0]].itemCount.ToString();
             inven.item[tanah.plantIdx[1]].itemCount += 1;
             tanah.state = 1;
+            tanah.biji = null;
             Destroy(gameObject);
 
             // inven.stackCount[tanah.plantIdx[1]].text = inven.item[tanah.plantIdx[1]].itemCount.ToString();

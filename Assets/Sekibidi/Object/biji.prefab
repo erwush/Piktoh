@@ -108,8 +108,9 @@ MonoBehaviour:
   inven: {fileID: 0}
   hotbar: {fileID: 0}
   spriteImg:
-  - {fileID: 21300000, guid: 73517a7743168514bba6385e759b1f78, type: 3}
-  - {fileID: 21300000, guid: c95123c6a2e24834a9a61c26dbe31847, type: 3}
+  - {fileID: 1523869429743019696, guid: cb0420495d2bb3a48a0753b191f985fd, type: 3}
+  - {fileID: 1483393270818900768, guid: 28c1b67bad800f74e94c22ad8bc8e70f, type: 3}
+  - {fileID: 3099456579120089365, guid: 88f8ba290e1a3b64cad5a7308fa2f611, type: 3}
   sprite: {fileID: 0}
 --- !u!61 &8480829568225689005
 BoxCollider2D:

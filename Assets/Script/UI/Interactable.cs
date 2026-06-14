@@ -24,7 +24,6 @@ public class Interactable : MonoBehaviour
     {
         if (inArea && Input.GetButtonDown("Interact"))
         {
-            Debug.Log("skibidi");
             DialogUI.SetActive(true);
             player.GetComponent<Movement>().StopMove();
             dialScript.dial = dialog;

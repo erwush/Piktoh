@@ -140,7 +140,25 @@ public class Inpentori : MonoBehaviour
         }
     }
 
+    public int GetItemCount(Item item)
+    {
+        return item.itemCount;
+    }
+
     public void AddItem(Item item, int count)
+    {
+
+        for (int i = 0; i < this.item.Count; i++)
+        {
+            if (this.item[i].codeName == item.codeName)
+            {
+                this.item[i].itemCount += count;
+                return;
+            }
+        }
+    }
+    
+    public void ReduceItem(Item item, int count)
     {
         
         for (int i = 0; i < this.item.Count; i++)

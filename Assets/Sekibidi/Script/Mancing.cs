@@ -93,6 +93,7 @@ public class Mancing : MonoBehaviour
                 progress.fillAmount = (float)strikeCounter / 3f;
                 isFishing = false;
                 anim.speed = 1f;
+                pleyer.GetComponent<Movement>().canMove = true;
                 if(Questing.Instance.daftarMisi[8].status == QuestStatus.Active) Questing.Instance.LaporkanProgress(8, 1);
             }
             else if (strikeCounter < 3)
@@ -120,6 +121,8 @@ public class Mancing : MonoBehaviour
 
     public void StartFishing()
     {
+        pleyer.GetComponent<Movement>().StopMove();
+        pleyer.GetComponent<Movement>().canMove = false;
         failCounter = 0;
         UpdateIndicator();
         strikeCounter = 0;

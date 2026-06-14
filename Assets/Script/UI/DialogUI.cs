@@ -61,6 +61,13 @@ public class DialogUI : MonoBehaviour
             {
                 StartCoroutine(GiveItem(dial.givenItem));
             }
+            else
+            {
+                UI.SetActive(false);
+                player.GetComponent<Movement>().canMove = true;
+                if (Questing.Instance.daftarMisi[9].status == QuestStatus.Active) Questing.Instance.LaporkanProgress(9, 1);
+                else if(Questing.Instance.daftarMisi[11].status == QuestStatus.Active) Questing.Instance.LaporkanProgress(11, 1);
+            }
 
         }
         else

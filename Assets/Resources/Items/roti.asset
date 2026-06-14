@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 0
   codeName: Roti
-  itemName: Item 1
+  itemName: Roti
   itemSprite: {fileID: 21300000, guid: 4618c7bf3ec7dfd4984b496a94049c64, type: 3}
   itemCount: 43
   isFood: 1
