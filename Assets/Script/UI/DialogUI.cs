@@ -15,13 +15,17 @@ public class DialogUI : MonoBehaviour
     public GameObject player;
     public Dialog dial;
     public Inpentori inven;
+    public Interactable npc;
     public string dialtext;
+    public Dialog[] sekardadu;
     private Coroutine dialCor;
+    public GameObject gambarakhir;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+
         player = GameObject.FindWithTag("Player");
         // dial = obj.GetComponent<Interactable>().dialog;
     }
@@ -85,6 +89,15 @@ public class DialogUI : MonoBehaviour
             if (i > dial.dialogCount)
             {
                 UI.SetActive(false);
+                for(int j = 0; j < sekardadu.Length; j++)
+                {
+                    if (sekardadu[j] == dial)
+                    {
+                        if(j != sekardadu.Length - 1) dial = sekardadu[j + 1];
+                        else gambarakhir.SetActive(true);
+                        break;
+                    }
+                }
                 player.GetComponent<Movement>().canMove = true;
             }
 

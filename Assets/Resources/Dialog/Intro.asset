@@ -12,22 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa9099ac61f6e9a4f94ee7aeb070e57d, type: 3}
   m_Name: Intro
   m_EditorClassIdentifier: 
-  dialogCount: 3
+  dialogCount: 2
   currentDial: 0
   nama:
   - ....................
   - Jiman
-  - Papa
   text:
   - '"Sebelum ada rumah, sebelum ada tetangga... yang ada hanyalah bisikan alam."'
   - '"Namaku Jiman. Kakiku melangkah ke tanah tak bertuan ini, membawa sebuah harapan
     sederhana: membangun sebuah tempat di mana kehangatan bisa tumbuh."'
-  - 
   avatar:
-  - {fileID: -822559620112291270, guid: 1f4cfd0452e580f4d81c888aee8f5cbd, type: 3}
-  - {fileID: 21300000, guid: 2e32ab1f04cf39e4c8ce577d778aefab, type: 3}
-  - {fileID: 21300000, guid: d23a3e45e2fdc564197439aa1bbeed02, type: 3}
+  - {fileID: -1769083397474100946, guid: 7b381759b2019c648b8f2db6c29710df, type: 3}
+  - {fileID: 21300000, guid: b2031b981cab940468c4f9eb39892517, type: 3}
   typingSpeed: 0.00001
   isItem: 0
   itemCount: 0
   givenItem: {fileID: 0}
+  codeName: 

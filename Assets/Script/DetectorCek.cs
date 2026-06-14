@@ -37,6 +37,7 @@ public class DetectorCek : MonoBehaviour
     {
         UpdateText();
         rumah.GetComponent<SpriteRenderer>().color=  new Color(1f, 1f, 1f, 0f);
+        npc.SetActive(false);
     }
 
     bool SemuaPohonHilang()
@@ -193,7 +194,8 @@ public class DetectorCek : MonoBehaviour
             Questing.Instance.LaporkanProgress(6, 1);
         else if (Questing.Instance.daftarMisi[10].status == QuestStatus.Active)
             Questing.Instance.LaporkanProgress(10, 1);
-        npc.SetActive(true);
+        if(npc != null) npc.SetActive(true);
+            
         rumah.GetComponent<SpriteRenderer>().color=  new Color(1f, 1f, 1f, 1f);
         gameObject.SetActive(false);
     }

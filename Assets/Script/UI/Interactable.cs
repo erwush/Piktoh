@@ -25,6 +25,7 @@ public class Interactable : MonoBehaviour
         if (inArea && Input.GetButtonDown("Interact"))
         {
             DialogUI.SetActive(true);
+            dialScript.npc = this;
             player.GetComponent<Movement>().StopMove();
             dialScript.dial = dialog;
             dialScript.ChangeDialog();

@@ -10,6 +10,7 @@ public class StartScreen : MonoBehaviour
     public Image[] logo;
     public TextMeshProUGUI textDisplay;
     public Image ireng;
+    public Image logo2;
 
     [Header("Timing")]
     public float fadeTime = 1f;
@@ -28,6 +29,7 @@ public class StartScreen : MonoBehaviour
             SetAlpha(l, 0);
 
         SetAlpha(textDisplay, 0);
+        SetAlpha(logo2, 0);
 
         if (ireng != null)
             ireng.gameObject.SetActive(false);
@@ -70,11 +72,11 @@ public class StartScreen : MonoBehaviour
         // =====================
         // Text 2
         // =====================
-        textDisplay.text = text2;
+        logo2.gameObject.SetActive(true);
 
-        yield return Fade(textDisplay, 0, 1);
+        yield return Fade(logo2, 0, 1);
         yield return new WaitForSeconds(showTime);
-        yield return Fade(textDisplay, 1, 0);
+        yield return Fade(logo2, 1, 0);
 
         // =====================
         // Finish
