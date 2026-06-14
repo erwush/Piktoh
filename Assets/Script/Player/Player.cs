@@ -4,12 +4,15 @@ using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
+    [Header("Stats")]
     public float health = 33550336;
     public float maxHealth = 33550336;
     public float energy = 100;
     public float maxEnergy = 100;
+
     public Image healthBar;
     public Image energyBar;
+
     public Animator anim;
 
     [Header("Combat Settings")]
@@ -30,50 +33,98 @@ public class Player : MonoBehaviour
     public LayerMask stoneLayer;
     private float nambangTimer;
 
+    [Header("Death & Respawn")]
+    public Image blackScreen;
+    public float fadeSpeed = 2f;
+    public Transform respawnPoint;
+
+    private bool isDead = false;
+
     private BatangPanas hotbar;
 
     void Start()
     {
         health = maxHealth;
         energy = maxEnergy;
+
         hotbar = GetComponent<BatangPanas>();
         anim = GetComponent<Animator>();
+
+        if (blackScreen != null)
+        {
+            Color c = blackScreen.color;
+            c.a = 0f;
+            blackScreen.color = c;
+        }
     }
 
     void Update()
     {
-        if (healthBar != null) healthBar.fillAmount = health / maxHealth;
-        if (energyBar != null) energyBar.fillAmount = energy / maxEnergy;
+        if (healthBar != null)
+            healthBar.fillAmount = health / maxHealth;
 
-        if (atkTimer > 0) atkTimer -= Time.deltaTime;
-        if (nebangTimer > 0) nebangTimer -= Time.deltaTime;
-        if (nambangTimer > 0) nambangTimer -= Time.deltaTime;
+        if (energyBar != null)
+            energyBar.fillAmount = energy / maxEnergy;
 
-        // Slot 0: Menyerang Musuh (Klik Kiri)
-        if (atkTimer <= 0 && Input.GetMouseButtonDown(0) && hotbar.activeSlot == 0)
+        if (!isDead && health <= 0)
+        {
+            StartCoroutine(DeathRoutine());
+        }
+
+        if (isDead)
+            return;
+
+        if (atkTimer > 0)
+            atkTimer -= Time.deltaTime;
+
+        if (nebangTimer > 0)
+            nebangTimer -= Time.deltaTime;
+
+        if (nambangTimer > 0)
+            nambangTimer -= Time.deltaTime;
+
+        // Slot 0 = Attack
+        if (atkTimer <= 0 &&
+            Input.GetMouseButtonDown(0) &&
+            hotbar.activeSlot == 0)
         {
             atkTimer = atkSpd;
             Attack();
         }
 
-        // Slot 1: Menebang Pohon (Tombol E)
-        if (nebangTimer <= 0 && Input.GetKeyDown(KeyCode.E) && hotbar.activeSlot == 1)
+        // Slot 1 = Tree
+        if (nebangTimer <= 0 &&
+            Input.GetKeyDown(KeyCode.E) &&
+            hotbar.activeSlot == 1)
         {
             nebangTimer = nebangSpd;
             Nebang();
         }
 
-        // Slot 2: Menambang Batu (Tombol E)
-        if (nambangTimer <= 0 && Input.GetKeyDown(KeyCode.E) && hotbar.activeSlot == 2)
+        // Slot 2 = Stone
+        if (nambangTimer <= 0 &&
+            Input.GetKeyDown(KeyCode.E) &&
+            hotbar.activeSlot == 2)
         {
             nambangTimer = nambangSpd;
             Nambang();
         }
     }
 
-    void Attack() { ApplyDamage(); }
-    void Nebang() { ApplyNebang(); }
-    void Nambang() { ApplyNambang(); }
+    void Attack()
+    {
+        ApplyDamage();
+    }
+
+    void Nebang()
+    {
+        ApplyNebang();
+    }
+
+    void Nambang()
+    {
+        ApplyNambang();
+    }
 
     public void ChangeHealth(float amount)
     {
@@ -89,11 +140,19 @@ public class Player : MonoBehaviour
 
     void ApplyDamage()
     {
-        Collider2D[] enemies = Physics2D.OverlapCircleAll(atkPoint.position, atkRange, eLayer);
+        Collider2D[] enemies =
+            Physics2D.OverlapCircleAll(
+                atkPoint.position,
+                atkRange,
+                eLayer);
+
         foreach (Collider2D enemy in enemies)
         {
             StartCoroutine(AttackAnim());
-            Kriper kriperScript = enemy.GetComponent<Kriper>();
+
+            Kriper kriperScript =
+                enemy.GetComponent<Kriper>();
+
             if (kriperScript != null)
             {
                 kriperScript.ChangeHealth(-atk);
@@ -103,11 +162,19 @@ public class Player : MonoBehaviour
 
     void ApplyNebang()
     {
-        Collider2D[] trees = Physics2D.OverlapCircleAll(atkPoint.position, atkRange, treeLayer);
+        Collider2D[] trees =
+            Physics2D.OverlapCircleAll(
+                atkPoint.position,
+                atkRange,
+                treeLayer);
+
         foreach (Collider2D tree in trees)
         {
             StartCoroutine(NebangAnim());
-            Pohon pohonScript = tree.GetComponent<Pohon>();
+
+            Pohon pohonScript =
+                tree.GetComponent<Pohon>();
+
             if (pohonScript != null)
             {
                 pohonScript.ChangeHealth(-1);
@@ -119,39 +186,97 @@ public class Player : MonoBehaviour
 
     void ApplyNambang()
     {
-        // Mencari objek dengan layer Stone di sekitar Player
-        Collider2D[] stones = Physics2D.OverlapCircleAll(atkPoint.position, atkRange, stoneLayer);
+        Collider2D[] stones =
+            Physics2D.OverlapCircleAll(
+                atkPoint.position,
+                atkRange,
+                stoneLayer);
+
         foreach (Collider2D stone in stones)
         {
             StartCoroutine(NambangAnim());
-            Batu batuScript = stone.GetComponent<Batu>();
+
+            Batu batuScript =
+                stone.GetComponent<Batu>();
+
             if (batuScript != null)
             {
-                batuScript.ChangeHealth(-1); // Mengurangi darah batu
-                ChangeEnergy(-5f);          // Mengurangi energi player
-                break; 
+                batuScript.ChangeHealth(-1);
+                ChangeEnergy(-5f);
+                break;
             }
         }
+    }
+
+    IEnumerator DeathRoutine()
+    {
+        isDead = true;
+
+        // Fade In
+        while (blackScreen.color.a < 1f)
+        {
+            Color c = blackScreen.color;
+            c.a += fadeSpeed * Time.deltaTime;
+            blackScreen.color = c;
+
+            yield return null;
+        }
+
+        Respawn();
+
+        yield return new WaitForSeconds(0.5f);
+
+        // Fade Out
+        while (blackScreen.color.a > 0f)
+        {
+            Color c = blackScreen.color;
+            c.a -= fadeSpeed * Time.deltaTime;
+            blackScreen.color = c;
+
+            yield return null;
+        }
+
+        Color finalColor = blackScreen.color;
+        finalColor.a = 0f;
+        blackScreen.color = finalColor;
+
+        isDead = false;
+    }
+
+    void Respawn()
+    {
+        transform.position = respawnPoint.position;
+
+        health = maxHealth;
+        energy = maxEnergy;
+
+        // Tambahkan kode respawn lain di sini jika perlu
     }
 
     public IEnumerator AttackAnim()
     {
         anim.SetBool("isAttack", true);
+
         yield return new WaitForSeconds(0.5f);
+
         anim.SetBool("isAttack", false);
     }
 
     public IEnumerator NebangAnim()
     {
         anim.SetBool("isNebang", true);
+
         yield return new WaitForSeconds(0.5f);
+
         anim.SetBool("isNebang", false);
     }
 
     public IEnumerator NambangAnim()
     {
         anim.SetBool("isNambang", true);
+
         yield return new WaitForSeconds(0.5f);
+
         anim.SetBool("isNambang", false);
     }
 
@@ -160,7 +285,9 @@ public class Player : MonoBehaviour
         if (atkPoint != null)
         {
             Gizmos.color = Color.red;
-            Gizmos.DrawWireSphere(atkPoint.position, atkRange);
+            Gizmos.DrawWireSphere(
+                atkPoint.position,
+                atkRange);
         }
     }
 }

@@ -2,29 +2,56 @@ using UnityEngine;
 
 public class Kotak : MonoBehaviour
 {
-    public float health;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public float health = 100;
 
-    // Update is called once per frame
+    public bool isAttacked;
+
+    private float attackedTimer;
+    private float tickTimer;
+
     void Update()
     {
-
-    }
-    
-    public void ChangeHealth(float amount)
-    {
-        health += amount;
-        if (health > 100)
+        if (isAttacked)
         {
-            health = 100;
+            attackedTimer -= Time.deltaTime;
+
+            tickTimer += Time.deltaTime;
+
+            if (tickTimer >= 1f)
+            {
+                tickTimer = 0f;
+                health -= 1;
+            }
+
+            if (attackedTimer <= 0)
+            {
+                isAttacked = false;
+                tickTimer = 0f;
+            }
         }
+        else
+        {
+            tickTimer += Time.deltaTime;
+
+            if (tickTimer >= 1f)
+            {
+                tickTimer = 0f;
+                health += 5;
+
+                if (health > 100)
+                    health = 100;
+            }
+        }
+
         if (health <= 0)
         {
             Destroy(gameObject);
         }
+    }
+
+    public void ChangeHealth(float amount)
+    {
+        isAttacked = true;
+        attackedTimer = 5f;
     }
 }
