@@ -1,0 +1,107 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa9099ac61f6e9a4f94ee7aeb070e57d, type: 3}
+  m_Name: lish
+  m_EditorClassIdentifier: 
+  dialogCount: 0
+  currentDial: 0
+  nama:
+  - Jiman
+  - Lish
+  - Jiman
+  - Lish
+  - Jiman
+  - Lish
+  - Jiman
+  - Lish
+  - Jiman
+  - Lish
+  - Jiman
+  - Lish
+  - Jiman
+  - Lish
+  - Jiman
+  text:
+  - '"Minum dulu, Lish. Biar dadamu agak longgar. Dari tadi kamu belum menyentuh
+    air sama sekali."'
+  - '"Saya tidak lapar, Pak Kades. Saya cuma mau tahu... apa warga mau berhenti mencari
+    Kak Ais? Tadi di depan, saya dengar Pak RT billing pencarian di perbatasan hutan
+    mau dihentikan."'
+  - '"Lish, dengarkan saya dulu. Tolong tatap muka orang tua ini."'
+  - (Perlahan mengangkat wajahnya, matanya sembap dan merah)
+  - '"Tidak ada yang mau berhenti peduli pada Ais. Kakakmu itu anak yang baik, warga
+    semua sayang sama dia. Tapi kita harus realistis, Lish. Sudah lima hari. Hutan
+    di hulu itu tebingnya curam, cuaca seminggu ini juga buruk. Kalau dipaksakan
+    masuk lebih dalam tanpa persiapan, warga lain bisa jadi korban."'
+  - '(Suaranya mulai bergetar, menahan tangis)
+
+    "Tapi Kak Ais sendirian di sana,
+    Pak! Dia mungkin terluka, atau kelaparan... Dia janji mau pulang sebelum malam
+    waktu hari itu. Kalau semua orang menyerah, terus siapa yang mau bawa Kak Ais
+    balik?"'
+  - '(Memajukan badannya, memegang kedua pundak Lish dengan tegas tapi lembut)
+
+    "Siapa
+    yang bilang kita menyerah? Tidak ada. Saya, sebagai Kepala Desa di sini, tanggung
+    jawab atas setiap nyawa warga saya. Malam ini, pencarian warga memang saya hentikan
+    demi keselamatan. Tapi besok pagi, tim SAR dari kabupaten akan datang. Mereka
+    punya alat yang lebih lengkap, punya anjing pelacak, dan paham medan."'
+  - '(Tertegun, air matanya menetes)
+
+    "Jadi... Kak Ais masih ada harapan, Pak?"'
+  - '(Mengangguk mantap, mencoba memberikan ketegasan di tengah keraguan)
+
+    "Selalu
+    ada harapan. Tapi sekarang, tugasmu bukan menangis sampai sakit, Lish. Kamu tahu
+    apa yang paling Ais khawatirkan kalau dia ada di sini?"'
+  - '(Mengusap air matanya dengan lengan baju)
+
+    "Apa, Pak?"'
+  - '"Dia paling tidak bisa melihat adiknya ini menyerah. Kamu itu dunianya Ais.
+    Kalau kamu mogok makan, mengurung diri, dan putus asa, kamu malah membuat perjuangan
+    kakakmu sia-sia. Sekarang, yang bisa kita lakukan adalah membagi tugas. Saya
+    mengurus logistik dan jalur pencarian besok pagi, dan kamu..."'
+  - (Menyimak dengan serius)
+  - '"Kamu harus kuat. Makan yang cukup malam ini, lalu berdoa. Jaga rumahmu, tunggu
+    kakakmu di sana dengan kondisi kamu yang sehat. Biar pas Ais pulang nanti, dia
+    melihat adiknya masih berdiri tegak. Sanggup, Lish?"'
+  - '(Terdiam agak lama, melihat ketulusan di mata Pak Jiman, lalu mengangguk pelan
+    walau napasnya masih tersendat)
+
+    "Sanggup, Pak Kades. Maaf... kalau tadi
+    Lish sempat berpikiran buruk."'
+  - '(Tersenyum tipis, menepuk pundak Lish)
+
+    "Wajar, kamu masih anak-anak dan
+    kamu sayang kakakmu. Sekarang, habiskan tehnya, lalu saya antar kamu pulang ke
+    rumah. Besok subuh, kita berjuang lagi."'
+  avatar:
+  - {fileID: 21300000, guid: 28b5c75d7e59151448f4bb415e268398, type: 3}
+  - {fileID: -7380387455989228743, guid: 97599191d49ab4a438583ae3031c94eb, type: 3}
+  - {fileID: 21300000, guid: 28b5c75d7e59151448f4bb415e268398, type: 3}
+  - {fileID: -7380387455989228743, guid: 97599191d49ab4a438583ae3031c94eb, type: 3}
+  - {fileID: 21300000, guid: 28b5c75d7e59151448f4bb415e268398, type: 3}
+  - {fileID: -7380387455989228743, guid: 97599191d49ab4a438583ae3031c94eb, type: 3}
+  - {fileID: 21300000, guid: 28b5c75d7e59151448f4bb415e268398, type: 3}
+  - {fileID: -7380387455989228743, guid: 97599191d49ab4a438583ae3031c94eb, type: 3}
+  - {fileID: 21300000, guid: 28b5c75d7e59151448f4bb415e268398, type: 3}
+  - {fileID: -7380387455989228743, guid: 97599191d49ab4a438583ae3031c94eb, type: 3}
+  - {fileID: 21300000, guid: 28b5c75d7e59151448f4bb415e268398, type: 3}
+  - {fileID: -7380387455989228743, guid: 97599191d49ab4a438583ae3031c94eb, type: 3}
+  - {fileID: 21300000, guid: 28b5c75d7e59151448f4bb415e268398, type: 3}
+  - {fileID: -7380387455989228743, guid: 97599191d49ab4a438583ae3031c94eb, type: 3}
+  - {fileID: 21300000, guid: 28b5c75d7e59151448f4bb415e268398, type: 3}
+  typingSpeed: 0
+  isItem: 0
+  itemCount: 0
+  givenItem: {fileID: 0}
+  codeName: 

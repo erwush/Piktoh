@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa9099ac61f6e9a4f94ee7aeb070e57d, type: 3}
+  m_Name: arya
+  m_EditorClassIdentifier: 
+  dialogCount: 12
+  currentDial: 0
+  nama:
+  - Jiman
+  - Arya
+  - Jiman
+  - Arya
+  - Jiman
+  - Arya
+  - Jiman
+  - Arya
+  - Jiman
+  - Arya
+  - Jiman
+  - Arya
+  text:
+  - (Baru keluar dari pintu rumah, langsung menepuk jidat) "Astaga, Arya... Kamu
+    ini ke rumah Kepala Desa mau nawari dagangan apa mau ngajak sparing jiu-jitsu
+    toh? Kok polosan lagi?!"
+  - (Menaruh kotak makanan di meja dengan penuh semangat, mengabaikan teguran Pak
+    Jiman) "Pak Kades! Ini loh, Pak! Tolong dicoba dulu menu baru dari Geprek Mantan
+    Garang. Ini varian baru, 'Geprek Level Tobat Nasuha'. Cabainya tiga puluh, Pak!
+    Dijamin langsung ingat dosa!"
+  - (Melihat kotak ayam, lalu melihat ke arah dada Arya) "Jangankan makan cabai tiga
+    puluh, Ya... Lihat kamu berdiri di teras rumah saya siang-siang gak pakai baju
+    begini saja saya sudah jantungan. Kamu itu sekarang sudah jadi owner kuliner,
+    masa pelayanannya semi-tarzan begini?"
+  - (Mengelap keringat di lehernya pakai handuk) "Aduh, ngapunten (maaf), Pak Kades.
+    Tadi di dapur itu hawanya kaya simulasi neraka. Mana kompor mawar nyala terus,
+    uap cabainya bikin sumuk (gerah) tingkat dewa. Makanya refleks saya lepas pas
+    packing tadi, terus langsung lari ke sini biar ayamnya tetap krispi."
+  - (Duduk di kursi teras sambil geleng-geleng) "Iya, saya tahu kamu itu bosnya sekarang.
+    Tapi ya diingat tempatnya, Arya. Bisnis kuliner itu nomor satu kebersihan dan
+    estetika. Kalau kamu anter barang ke pelanggan atau ke rumah perangkat desa dengan
+    gaya 'preman pasar' begini, yang ada orang malah takut ayamnya ketularan keringatmu."
+  - (Tertegun, melihat badannya sendiri lalu tertawa garing) "Eh... iya juga ya,
+    Pak. Waduh, gak kepikiran sampai sana. Saya tadi cuma fokus sama target market
+    dan kualitas rasa ayamnya, Pak."
+  - '"Nah, makanya. Pengusaha sukses itu penampilannya juga harus meyakinkan. Coba
+    bayangkan kalau kamu lagi presentasi modal ke investor, terus kamu telanjang
+    dada sambil pamer tato naga. Kan gak sinkron sama bisnis ayam geprekmu."'
+  - (Terkekeh sambil buru-buru mengambil kaos berkerah warna hitam dari dalam tas
+    plastiknya) "Siap, Pak Kades! Ini sebenarnya saya bawa kaos seragam karyawan
+    yang baru. Bentar, saya pakai dulu biar kelihatan kaya CEO beneran." (Arya langsung
+    memakai kaosnya).
+  - (Mengangguk puas) "Nah, kalau rapi begini kan pantas. Kelihatan kaya pengusaha
+    muda sukses dari desa kita. Aura premannya langsung ketutup sama aura omzet ratusan
+    juta."
+  - (Mata berbinar-binar) "Amin, Pak! Doakan cabang keduanya segera buka di kota.
+    Nah, sekarang silakan dicicipi dulu ayamnya, Pak. Mumpung masih hangat dan higienis
+    karena owner-nya sudah berbaju!"
+  - (Tertawa) "Ya wes, kene (sini) saya coba. Kalau enak, besok saya pesan dua puluh
+    kotak buat rapat koordinasi di kecamatan."
+  - '"Siap bos! Eh, siap Pak Kades! Nanti saya kirim paket komplit, gratis ongkir
+    khusus buat Pak Lurah!"'
+  avatar:
+  - {fileID: 21300000, guid: 28b5c75d7e59151448f4bb415e268398, type: 3}
+  - {fileID: 21300000, guid: 511bae6ee26abc84780042ae22070f24, type: 3}
+  - {fileID: 21300000, guid: 28b5c75d7e59151448f4bb415e268398, type: 3}
+  - {fileID: 21300000, guid: 511bae6ee26abc84780042ae22070f24, type: 3}
+  - {fileID: 21300000, guid: 28b5c75d7e59151448f4bb415e268398, type: 3}
+  - {fileID: 21300000, guid: 511bae6ee26abc84780042ae22070f24, type: 3}
+  - {fileID: 21300000, guid: 28b5c75d7e59151448f4bb415e268398, type: 3}
+  - {fileID: 21300000, guid: 511bae6ee26abc84780042ae22070f24, type: 3}
+  - {fileID: 21300000, guid: 28b5c75d7e59151448f4bb415e268398, type: 3}
+  - {fileID: 21300000, guid: 511bae6ee26abc84780042ae22070f24, type: 3}
+  - {fileID: 21300000, guid: 28b5c75d7e59151448f4bb415e268398, type: 3}
+  - {fileID: 21300000, guid: 511bae6ee26abc84780042ae22070f24, type: 3}
+  typingSpeed: 0
+  isItem: 0
+  itemCount: 0
+  givenItem: {fileID: 0}
+  codeName: 

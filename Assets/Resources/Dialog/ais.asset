@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa9099ac61f6e9a4f94ee7aeb070e57d, type: 3}
+  m_Name: ais
+  m_EditorClassIdentifier: 
+  dialogCount: 0
+  currentDial: 0
+  nama:
+  - Jiman
+  - ais
+  - Jiman
+  - ais
+  - jiman
+  - ais
+  - Jiman
+  - ais
+  - Jiman
+  text:
+  - '(Berlutut di bawah tebing curam, memandangi jaket yang sudah kaku dan dingin
+    di depannya, suaranya bergetar menahan sesak)
+
+    "Ais... kenapa kamu harus
+    berakhir di sini, Nak? Langkahmu terlalu jauh..."'
+  - '(Muncul sebagai bayangan di balik kabut, duduk di atas batu dengan wajah pucat
+    namun tenang)
+
+    "Maaf, Pak Kades. Waktu itu hujan terlalu lebat, saya terpeleset.
+    Terima kasih sudah bersusah payah mencari saya sampai ke hulu ini."'
+  - '(Mengepalkan tangan ke tanah, matanya berkaca-kaca)
+
+    "Bagaimana saya harus
+    bicara pada adikmu? Lish... anak itu semalaman tidak tidur. Dia terus-menerus
+    memegang janji kamu yang bilang mau pulang sebelum malam."'
+  - '(Menunduk, tersenyum getir)
+
+    "Saya tahu, Lish pasti hancur. Jangan beri
+    tahu dia dulu, Pak. Tolong... sembunyikan ini dari dia untuk beberapa saat saja."'
+  - '(Menatap bayangan Ais dengan tegas, suaranya berat)
+
+    "Menyembunyikannya?
+    Lish berhak tahu kenyataannya, Ais! Mau sampai kapan saya harus berbohong dan
+    memberi dia harapan palsu?"'
+  - '(Tatapannya memohon, suaranya parau menahan kesedihan)
+
+    "Hanya sampai dia
+    siap, Pak Jiman. Kalau Pak Kades bilang saya sudah tiada sekarang, Lish akan
+    nekat lari ke hutan ini. Dia bisa celaka. Jiwanya belum sekuat itu untuk menerima
+    kalau dia benar-benar sebatang kara."'
+  - '(Terpaku, menarik napas panjang yang terasa sangat berat di dadanya)
+
+    "Kamu
+    membebani pundak orang tua ini dengan kebohongan yang sangat berdosa, Ais..."'
+  - '(Berdiri perlahan, mengusap air mata di pipinya yang keriput, lalu menutupi
+    jasad Ais dengan kain)
+
+    "Tidur yang tenang, Nak. Biar dosa kebohongan ini
+    saya yang tanggung, demi keselamatan adikmu."'
+  avatar:
+  - {fileID: 21300000, guid: 28b5c75d7e59151448f4bb415e268398, type: 3}
+  - {fileID: 1179298085107432664, guid: cc2cc90cbf2b057479e573dfae86c9d7, type: 3}
+  - {fileID: 21300000, guid: 28b5c75d7e59151448f4bb415e268398, type: 3}
+  - {fileID: 1179298085107432664, guid: cc2cc90cbf2b057479e573dfae86c9d7, type: 3}
+  - {fileID: 21300000, guid: 28b5c75d7e59151448f4bb415e268398, type: 3}
+  - {fileID: 1179298085107432664, guid: cc2cc90cbf2b057479e573dfae86c9d7, type: 3}
+  - {fileID: 1179298085107432664, guid: cc2cc90cbf2b057479e573dfae86c9d7, type: 3}
+  - {fileID: 21300000, guid: 28b5c75d7e59151448f4bb415e268398, type: 3}
+  typingSpeed: 0
+  isItem: 0
+  itemCount: 0
+  givenItem: {fileID: 0}
+  codeName: 

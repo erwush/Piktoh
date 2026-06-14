@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa9099ac61f6e9a4f94ee7aeb070e57d, type: 3}
+  m_Name: wana
+  m_EditorClassIdentifier: 
+  dialogCount: 12
+  currentDial: 0
+  nama:
+  - Jiman
+  - Wana
+  - Jiman
+  - Wana
+  - Jiman
+  - Wana
+  - Jiman
+  - Wana
+  - Jiman
+  - Wana
+  - Jiman
+  - Wana
+  text:
+  - (Berhenti berjalan, berkacak pinggang sambil tersenyum menggeleng-geleng)<br>
+    "Wah, jan... Siang-siang begini pemandangannya kok ya ekstrem banget toh, Wan?"
+  - (Menoleh, agak terkejut lalu buru-buru mematikan rokoknya menghormati Pak Kades)
+    "Eh, Pak Lurah Jiman! Monggo, Pak, pinarak (silakan mampir). Ini loh, Pak, sumuknya
+    (gerahnya) minta ampun hari ini. Kaya lagi disembur naga."
+  - (Ikut duduk di ujung bangku pos ronda) "Iya, hawanya pancen panas. Tapi yo gak
+    usah pamer 'lukisan dinding' gitu dong. Itu naga di punggungmu apa gak masuk
+    angin kalau diumbar terus?"
+  - (Terkekeh sambil menepuk dadanya) "Ah, aman, Pak. Kulit badak begini mana membal
+    kalau cuma angin sepoi-sepoi. Lagian kan di pos ronda, Pak, bukan di balai desa."
+  - (Mendesah pelan, nadanya melunak tapi tetap tegas) "Wan, Wan... Kamu itu sekarang
+    kan sudah pensiun jadi preman. Sudah jadi warga baik-baik, rajin ikut kerja bakti
+    lagi. Saya itu senang, salut sama perubahanmu."
+  - (Tersenyum bangga) "Lho, jelas toh, Pak. Saya kan sudah tobat nasuha. Gak mau
+    lagi bikin gaduh kampung."
+  - '"Nah, justru karena kamu sudah jadi orang baik, pakaiannya juga disesuaikan.
+    Memang ini pos ronda, tapi kan ini fasilitas umum. Sebentar lagi jam pulang sekolah,
+    anak-anak kecil sama ibu-ibu lewat sini. Nanti kalau anak-anak lihat kamu gak
+    pakai baju, tatonya ke mana-mana, mereka bisa takut. Atau yang lebih gawat, malah
+    ditiru. Dikira kalau keren itu harus telanjang dada."'
+  - (Tertegun sebentar, menggaruk kepalanya yang tidak gatal) "Waduh... Sampai ke
+    sana ya mikirnya, Pak? Saya cuma murni karena gerah doang sih, Pak, suer. Gak
+    ada niat sok jagoan lagi."
+  - (Menepuk pundak Wana) "Saya tahu, saya paham kamu gak ada niat buruk. Tapi yang
+    namanya wibawa itu dijaga dari hal kecil, Wan. Kamu pakai kaos oblong tipis kan
+    ya tetap adem. Menghargai lingkungan sekitar, biar warga juga makin respek sama
+    kamu. Gimana?"
+  - (Terdiam sejenak, lalu mengangguk paham sambil meraih kaos hitamnya yang digantung
+    di tiang pos) "Ih, nggih deh, Pak Lurah. Masuk akal juga omongannya. Malu juga
+    saya kalau dipikir-pikir. Bentar, saya pakai baju dulu." (Wana langsung memakai
+    kaosnya kembali).
+  - (Tersenyum lebar) "Nah, ganteng kalau begini! Kelihatan kaya calon menantu idaman.
+    Ya sudah, es tehmu dihabiskan. Habis ini kalau senggang, tolong bantu Pak RT
+    cek sound system di masjid, ya?"
+  - '"Siap laksanakan, Pak Kades! Aman itu mah!"'
+  avatar:
+  - {fileID: 21300000, guid: 28b5c75d7e59151448f4bb415e268398, type: 3}
+  - {fileID: 21300000, guid: 4f6ce898056d5fb4c96f1e4ae6d13fa4, type: 3}
+  - {fileID: 21300000, guid: 28b5c75d7e59151448f4bb415e268398, type: 3}
+  - {fileID: 21300000, guid: 4f6ce898056d5fb4c96f1e4ae6d13fa4, type: 3}
+  - {fileID: 21300000, guid: 28b5c75d7e59151448f4bb415e268398, type: 3}
+  - {fileID: 21300000, guid: 4f6ce898056d5fb4c96f1e4ae6d13fa4, type: 3}
+  - {fileID: 21300000, guid: 28b5c75d7e59151448f4bb415e268398, type: 3}
+  - {fileID: 21300000, guid: 4f6ce898056d5fb4c96f1e4ae6d13fa4, type: 3}
+  - {fileID: 21300000, guid: 28b5c75d7e59151448f4bb415e268398, type: 3}
+  - {fileID: 21300000, guid: 4f6ce898056d5fb4c96f1e4ae6d13fa4, type: 3}
+  - {fileID: 21300000, guid: 28b5c75d7e59151448f4bb415e268398, type: 3}
+  - {fileID: 21300000, guid: 4f6ce898056d5fb4c96f1e4ae6d13fa4, type: 3}
+  typingSpeed: 0
+  isItem: 0
+  itemCount: 0
+  givenItem: {fileID: 0}
+  codeName: 

@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa9099ac61f6e9a4f94ee7aeb070e57d, type: 3}
+  m_Name: daren
+  m_EditorClassIdentifier: 
+  dialogCount: 0
+  currentDial: 0
+  nama:
+  - Jiman
+  - Daren
+  - Jiman
+  - Daren
+  - Jiman
+  - Daren
+  - Jiman
+  - Daren
+  - Jiman
+  - Daren
+  - Jiman
+  - Daren
+  text:
+  - (Kaget melihat Daren naik ke teras) "Loh, loh, Daren! Kamu ini mau nemui Kepala
+    Desa apa mau ngajak pegatan (cerai) toh? Kok polosan gak pakai baju begitu?"
+  - (Membungkuk sopan sambil tersenyum lebar) "Sore, Pak Kades! Wah, ngapunten (maaf)
+    banget, Pak. Tadi habis bantu warga angkat-angkat semen buat ruko di ujung jalan.
+    Gerah pisan, makanya kaosnya saya lepas daripada basah kuyup."
+  - (Menggeleng-gelengkan kepala sambil tersenyum geli) "Yo wes, duduk dulu. Tapi
+    ya ampun, Ren... Kamu itu sekarang statusnya sudah jadi 'Preman Baik' kebanggaan
+    desa. Kerja bakti gas, ronda malam gas, bantu warga paling depan. Tapi mosok
+    menghadap Pak Kades di Balai Desa gak modal kaos selembar pun?"
+  - (Terkekeh sambil menggaruk lehernya yang bertato) "Hehehe, iya juga ya, Pak.
+    Saya refleks langsung ke sini karena tadi dibilangi Pak RT kalau inventaris cangkul
+    desa ada yang patah. Rencana mau saya bawa ke tukang las sekarang, Pak."
+  - (Niatnya mau marah tapi malah kagum) "Gusti... Kamu itu ya, niatnya baik luar
+    biasa, gercep (gerak cepat). Tapi tolonglah, citra premannya dikit-dikit diganti,
+    Ren. Badanmu itu sangar, tatonya gambar celeng (babi hutan) sama keris begitu,
+    kalau mondar-mandir telanjang dada di Balai Desa, nanti dikira kita mau buka
+    pendaftaran sasana tinju."
+  - (Melihat tatonya sendiri) "Loh, padahal ini tato seni loh, Pak. Tapi nggih leres
+    (iya benar) sih, Pak Kades. Tadi pas jalan ke sini, ibu-ibu yang lagi belanja
+    di tukang sayur langsung pada minggir semua. Padahal saya cuma mau nyapa."
+  - '"Nah, itu dia! Mereka itu gak takut kamu kompas (pajaki) lagi, tapi mereka sungkan
+    sama silau lihat badanmu. Lagian ini kan lembaga formal desa, Ren. Kamu itu panutan
+    preman-preman lain yang mau tobat. Harus rapi."'
+  - (Burung-buru mengambil kaos oblong yang sedari tadi diikatkan di pinggangnya,
+    lalu memakainya) "Aduh, siap, Pak Kades! Kelupaan saya kalau bawa kaos cadangan
+    di pinggang. Nah, sampun (sudah) rapi kan, Pak?"
+  - (Tersenyum puas sambil menepuk pundak Daren) "Nah! Begini kan gagah, ketok (kelihatan)
+    berwibawa. Kalau begini kan gak bikin salah paham."
+  - '"Siap, Pak Kades. Besok-besok kalau sowan (berkunjung) ke Balai Desa, saya pakai
+    kemeja sekalian biar kaya perangkat desa, hehehe."'
+  - '"Halah, gak usah lebay. Kaos oblong oblong yang penting sopan ya wis cukup.
+    Ya sudah, itu cangkulnya di gudang belakang, bawa ke tukang las. Nanti biayanya
+    bon-kan ke saya."'
+  - Siap dimengerti, Pak Kades! Laksanakan!"
+  avatar:
+  - {fileID: 21300000, guid: 28b5c75d7e59151448f4bb415e268398, type: 3}
+  - {fileID: 21300000, guid: c22f0f0a1ea2ce149b3dbd9c5c00d413, type: 3}
+  - {fileID: 21300000, guid: 28b5c75d7e59151448f4bb415e268398, type: 3}
+  - {fileID: 21300000, guid: c22f0f0a1ea2ce149b3dbd9c5c00d413, type: 3}
+  - {fileID: 21300000, guid: 28b5c75d7e59151448f4bb415e268398, type: 3}
+  - {fileID: 21300000, guid: c22f0f0a1ea2ce149b3dbd9c5c00d413, type: 3}
+  - {fileID: 21300000, guid: 28b5c75d7e59151448f4bb415e268398, type: 3}
+  - {fileID: 21300000, guid: c22f0f0a1ea2ce149b3dbd9c5c00d413, type: 3}
+  - {fileID: 21300000, guid: 28b5c75d7e59151448f4bb415e268398, type: 3}
+  - {fileID: 21300000, guid: c22f0f0a1ea2ce149b3dbd9c5c00d413, type: 3}
+  - {fileID: 21300000, guid: 28b5c75d7e59151448f4bb415e268398, type: 3}
+  - {fileID: 21300000, guid: c22f0f0a1ea2ce149b3dbd9c5c00d413, type: 3}
+  typingSpeed: 0
+  isItem: 0
+  itemCount: 0
+  givenItem: {fileID: 0}
+  codeName: 
