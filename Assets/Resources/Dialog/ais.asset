@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa9099ac61f6e9a4f94ee7aeb070e57d, type: 3}
   m_Name: ais
   m_EditorClassIdentifier: 
-  dialogCount: 0
+  dialogCount: 8
   currentDial: 0
   nama:
   - Jiman
@@ -23,7 +23,6 @@ MonoBehaviour:
   - ais
   - Jiman
   - ais
-  - Jiman
   text:
   - '(Berlutut di bawah tebing curam, memandangi jaket yang sudah kaku dan dingin
     di depannya, suaranya bergetar menahan sesak)

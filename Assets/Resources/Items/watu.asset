@@ -10,12 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 52811e16122792c4aa91299badfdcd39, type: 3}
-  m_Name: umbi 1
+  m_Name: watu
   m_EditorClassIdentifier: 
   itemId: 1
-  codeName: Watu
+  codeName: watu
   itemName: Batu
-  itemSprite: {fileID: 21300000, guid: 2e32ab1f04cf39e4c8ce577d778aefab, type: 3}
-  itemCount: 49
+  itemSprite: {fileID: -2138891781582226414, guid: 5e8f6e27f43b58a4c96ada6236d453ef, type: 3}
+  itemCount: 0
   isFood: 0
   isPlant: 0
+  isUnlocked: 0

@@ -57,18 +57,18 @@ MonoBehaviour:
     ke masjid buat jamaah. Sing penting pesanku tadi diingat ya."'
   - '"Nggih, Pak Jiman. Pasti dilaksanakan. Monggo, Pak, hati-hati di jalan."'
   avatar:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 21300000, guid: 9c8548680d0d0214480a49c7fe7fbf0d, type: 3}
+  - {fileID: 21300000, guid: 9c8548680d0d0214480a49c7fe7fbf0d, type: 3}
+  - {fileID: 21300000, guid: 9c8548680d0d0214480a49c7fe7fbf0d, type: 3}
+  - {fileID: 21300000, guid: 9c8548680d0d0214480a49c7fe7fbf0d, type: 3}
+  - {fileID: 21300000, guid: 9c8548680d0d0214480a49c7fe7fbf0d, type: 3}
+  - {fileID: 21300000, guid: 9c8548680d0d0214480a49c7fe7fbf0d, type: 3}
+  - {fileID: 21300000, guid: 9c8548680d0d0214480a49c7fe7fbf0d, type: 3}
+  - {fileID: 21300000, guid: 9c8548680d0d0214480a49c7fe7fbf0d, type: 3}
+  - {fileID: 21300000, guid: 9c8548680d0d0214480a49c7fe7fbf0d, type: 3}
+  - {fileID: 21300000, guid: 9c8548680d0d0214480a49c7fe7fbf0d, type: 3}
+  - {fileID: 21300000, guid: 9c8548680d0d0214480a49c7fe7fbf0d, type: 3}
+  - {fileID: 21300000, guid: 9c8548680d0d0214480a49c7fe7fbf0d, type: 3}
   typingSpeed: 0
   isItem: 0
   itemCount: 0

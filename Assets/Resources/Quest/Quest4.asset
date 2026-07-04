@@ -14,8 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questId: 4
   displayName: Bangun Desa
-  desc: Mulai bangun desa, dengan membuat 1 rumah
+  desc: 'Gunakan batu dan kayu yang telah diperoleh untuk membangun Rumah Baru. <br>
+
+    Info:
+    Kamu harus menebang semua pohon di area sekitar tempat rumah akan dibangun'
   pos: {x: 0, y: 0, z: 0}
-  status: 0
-  currentAmount: 0
+  status: 2
+  currentAmount: 1
   targetAmount: 1

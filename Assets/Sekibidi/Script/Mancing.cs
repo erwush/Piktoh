@@ -24,6 +24,8 @@ public class Mancing : MonoBehaviour
     public GameObject mancingUI;
     public GameObject pleyer;
     public AudioSource mancingAudio;
+    public Item iwak;
+    public Inpentori inpen;
     Animator anim;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -84,7 +86,7 @@ public class Mancing : MonoBehaviour
             UpdateIndicator();
             strikeCounter++;
             progress.fillAmount = (float)strikeCounter / 3f;
-            text[0].text = "Mantap";
+            // text[0].text = "Mantap";
             mancingAudio.Play();
             if (strikeCounter == 3)
             {
@@ -94,7 +96,8 @@ public class Mancing : MonoBehaviour
                 isFishing = false;
                 anim.speed = 1f;
                 pleyer.GetComponent<Movement>().canMove = true;
-                if(Questing.Instance.daftarMisi[8].status == QuestStatus.Active) Questing.Instance.LaporkanProgress(8, 1);
+                inpen.AddItem(iwak, 1);
+                if(Questing.Instance.daftarMisi[9].status == QuestStatus.Active) Questing.Instance.LaporkanProgress(9, 1);
             }
             else if (strikeCounter < 3)
             {
@@ -103,7 +106,7 @@ public class Mancing : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.Space) && !canStrike && isFishing)
         {
-            text[0].text = "Gk Mantap";
+            // text[0].text = "Gk Mantap";
             failCounter++;
             UpdateIndicator();
             if (failCounter == 3)
@@ -127,7 +130,7 @@ public class Mancing : MonoBehaviour
         UpdateIndicator();
         strikeCounter = 0;
         progress.fillAmount = (float)strikeCounter / 3f;
-        text[0].text = "Mancing Mania?";
+        // text[0].text = "Mancing Mania?";
         ChangeStrike();
         isFishing = true;
 

@@ -34,7 +34,7 @@ public class Oronyx : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (inArea && !isStart && Input.GetKeyDown(KeyCode.E))
+        if (inArea && !isStart && Input.GetKeyDown(KeyCode.F))
         {
             isStart = true;
         }
@@ -66,12 +66,12 @@ public class Oronyx : MonoBehaviour
             // barController.UpdateBar(progress[0], maxProgress[0]);
             if (progress[0] >= maxProgress[0])
             {
-                pleyer.energy -= 2;
+                // pleyer.energy -= 2;
             }
         }
         else if (inArea && Input.GetKeyDown(KeyCode.Space) && isNarik && progress[1] < maxProgress[1] && isStart)
         {
-            pleyer.energy -= 2;
+            // pleyer.energy -= 2;
             progressObject.SetActive(true);
             progressImage.fillAmount = progress[1] / maxProgress[1];
             progressImage.fillOrigin = (int)Image.OriginHorizontal.Left;
@@ -100,8 +100,9 @@ public class Oronyx : MonoBehaviour
             isStart = false;
             isNarik = false;
             // Instantiate(reward);
-            onComplete?.Invoke();
-            sfx.Play();
+            if (pleyer.sumur < 5) pleyer.sumur += 3;
+            if(pleyer.sumur > 5) pleyer.sumur = 5;
+            // sfx.Play();
         }
 
         if (isStart && !isNarik)
@@ -111,12 +112,12 @@ public class Oronyx : MonoBehaviour
         } else if(isStart && isNarik)
         {
             keybind.GetComponent<RectTransform>().sizeDelta = new Vector2(4f, 1.1f);
-            keyText.text = "Tahan Spasi";
+            keyText.text = "Tekan Spasi";
         }
         else
         {
             keybind.GetComponent<RectTransform>().sizeDelta = new Vector2(1f, 1f);
-            keyText.text = "E";
+            keyText.text = "F";
         }
 
     }

@@ -28,7 +28,8 @@ public class AreaMancing : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            if(pleyer == null) pleyer = collision.gameObject;
+            if (pleyer == null) pleyer = collision.gameObject;
+            mancingUI.SetActive(false);
             inArea = false;
         }
     }
@@ -36,7 +37,7 @@ public class AreaMancing : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(inArea && Input.GetKeyDown(KeyCode.E) && !mancing.isFishing && hotbar.activeSlot == 4)
+        if(inArea && Input.GetKeyDown(KeyCode.F) && !mancing.isFishing && hotbar.activeSlot == 4)
         {
             mancingUI.SetActive(true);
         }

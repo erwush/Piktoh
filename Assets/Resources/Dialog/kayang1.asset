@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa9099ac61f6e9a4f94ee7aeb070e57d, type: 3}
+  m_Name: kayang1
+  m_EditorClassIdentifier: 
+  dialogCount: 2
+  currentDial: 0
+  nama:
+  - Riz
+  - Riz
+  text:
+  - Ayo ke pikto
+  - Nanti bisa ada orang kayang
+  avatar:
+  - {fileID: 2146140880102775916, guid: 44203874ee110e249a0b1a72c269dcc0, type: 3}
+  - {fileID: 2146140880102775916, guid: 44203874ee110e249a0b1a72c269dcc0, type: 3}
+  typingSpeed: 0
+  isItem: 0
+  itemCount: 0
+  givenItem: {fileID: 0}
+  codeName: kayang1

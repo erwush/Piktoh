@@ -1,14 +1,20 @@
- using UnityEngine;
+using UnityEngine;
+using System.Collections;
 
 public class Movement : MonoBehaviour
 {
+    [Header("Movement")]
     public float speed = 5f;
-    public bool canMove;
-    Vector2 moveDir;
-    Rigidbody2D rb;
-    Animator anim;
+    public bool canMove = true;
 
-    int direction;
+    private Vector2 moveDir;
+    private Rigidbody2D rb;
+    private Animator anim;
+
+    private int direction;
+
+    [Header("Knockback")]
+    public float knockbackResistance = 1f;
 
     void Start()
     {
@@ -18,34 +24,32 @@ public class Movement : MonoBehaviour
 
     void Update()
     {
-        moveDir.x = Input.GetAxisRaw("Horizontal");
-        moveDir.y = Input.GetAxisRaw("Vertical");
-
-        moveDir.Normalize();
-
-        // cek arah dominan
-        if (moveDir != Vector2.zero)
+        if (canMove)
         {
-            if (Mathf.Abs(moveDir.x) > Mathf.Abs(moveDir.y))
-            {
-                // kiri kanan
-                if (moveDir.x > 0)
-                    direction = 3; // right
-                else
-                    direction = 2; // left
-            }
-            else
-            {
-                // atas bawah
-                if (moveDir.y > 0)
-                    direction = 1; // up
-                else
-                    direction = 0; // down
-            }
-        }
+            moveDir.x = Input.GetAxisRaw("Horizontal");
+            moveDir.y = Input.GetAxisRaw("Vertical");
 
-        anim.SetInteger("Direction", direction);
-        anim.SetBool("IsMoving", moveDir != Vector2.zero);
+            moveDir.Normalize();
+
+            if (moveDir != Vector2.zero)
+            {
+                if (Mathf.Abs(moveDir.x) > Mathf.Abs(moveDir.y))
+                {
+                    direction = moveDir.x > 0 ? 3 : 2;
+                }
+                else
+                {
+                    direction = moveDir.y > 0 ? 1 : 0;
+                }
+            }
+
+            anim.SetInteger("Direction", direction);
+            anim.SetBool("IsMoving", moveDir != Vector2.zero);
+        }
+        else
+        {
+            anim.SetBool("IsMoving", false);
+        }
     }
 
     void FixedUpdate()
@@ -60,5 +64,27 @@ public class Movement : MonoBehaviour
     {
         canMove = false;
         rb.linearVelocity = Vector2.zero;
+    }
+
+    public void ApplyKnockback(Vector2 attackerPosition, float force, float duration)
+    {
+        StopAllCoroutines();
+        StartCoroutine(KnockbackCoroutine(attackerPosition, force, duration));
+    }
+
+    IEnumerator KnockbackCoroutine(Vector2 attackerPosition, float force, float duration)
+    {
+        canMove = false;
+
+        Vector2 knockDir =
+            ((Vector2)transform.position - attackerPosition).normalized;
+
+        rb.linearVelocity = Vector2.zero;
+        rb.AddForce(knockDir * (force / knockbackResistance), ForceMode2D.Impulse);
+
+        yield return new WaitForSeconds(duration);
+
+        rb.linearVelocity = Vector2.zero;
+        canMove = true;
     }
 }

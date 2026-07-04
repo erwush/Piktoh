@@ -16,6 +16,7 @@ MonoBehaviour:
   codeName: kokkayu
   itemName: Kayu
   itemSprite: {fileID: 3523003418914638203, guid: 5055c5d2f34b35d4e8fb3adbadbb30ec, type: 3}
-  itemCount: 7
+  itemCount: 1
   isFood: 0
   isPlant: 0
+  isUnlocked: 1

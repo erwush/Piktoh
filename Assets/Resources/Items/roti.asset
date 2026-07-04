@@ -16,6 +16,7 @@ MonoBehaviour:
   codeName: Roti
   itemName: Roti
   itemSprite: {fileID: 21300000, guid: 4618c7bf3ec7dfd4984b496a94049c64, type: 3}
-  itemCount: 43
+  itemCount: 0
   isFood: 1
   isPlant: 0
+  isUnlocked: 0

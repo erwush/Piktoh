@@ -14,15 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questId: 1
   displayName: Mulai Bercocok Tanam
-  desc: '1. ambil seed dari anuan <br>
+  desc: 'Cangkul tanah, tanam biji lalu makan hasil panen
 
-    2. cangkul tanah yang sudah disiapkan<br>
-
-    3.
-    tanam biji<br>
-
-    4. makan<br>'
+    Tips: Kamu bisa menimba
+    air di sumur lalu menyiram dengan tombol ''F'' untuk mempercepat pertumbuhan'
   pos: {x: 0, y: 0, z: 0}
-  status: 1
+  status: 0
   currentAmount: 0
-  targetAmount: 1
+  targetAmount: 3

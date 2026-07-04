@@ -50,8 +50,8 @@ public class BatangPanas : MonoBehaviour
                 activeSlot += 1;
                 slotImg[activeSlot].sprite = slotSprite[1];
                 slotImg[activeSlot - 1].sprite = slotSprite[0];
-            } 
-            else if(activeSlot == maxSlot - 1)
+            }
+            else if (activeSlot == maxSlot - 1)
             {
                 activeSlot = 0;
                 slotImg[activeSlot].sprite = slotSprite[1];
@@ -67,12 +67,25 @@ public class BatangPanas : MonoBehaviour
                 activeSlot -= 1;
                 slotImg[activeSlot].sprite = slotSprite[1];
                 slotImg[activeSlot + 1].sprite = slotSprite[0];
-            } 
-            else if(activeSlot == 0)
+            }
+            else if (activeSlot == 0)
             {
                 activeSlot = maxSlot - 1;
                 slotImg[activeSlot].sprite = slotSprite[1];
                 slotImg[0].sprite = slotSprite[0];
+            }
+        }
+    }
+
+    public void ChangeSlot(int slot)
+    {
+        activeSlot = slot;
+        slotImg[slot].sprite = slotSprite[1];
+        for (int i = 0; i < maxSlot; i++)
+        {
+            if (i != slot)
+            {
+                slotImg[i].sprite = slotSprite[0];
             }
         }
     }

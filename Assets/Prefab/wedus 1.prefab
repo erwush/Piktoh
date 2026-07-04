@@ -331,9 +331,10 @@ GameObject:
   - component: {fileID: 5816046240519832484}
   - component: {fileID: 30812657030238391}
   - component: {fileID: 1980543768042879456}
+  - component: {fileID: 2482882529968571608}
   m_Layer: 7
   m_Name: wedus 1
-  m_TagString: Untagged
+  m_TagString: Wedus
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -433,7 +434,7 @@ Rigidbody2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 871
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -512,6 +513,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   demeg: 20
+  knockbackForce: 10
+  knockbackDuration: 0.2
   anim: {fileID: 30812657030238391}
   stat: {fileID: 4080908564838205247}
   enemyMovement: {fileID: 3858957049442728638}
@@ -606,3 +609,25 @@ PolygonCollider2D:
       - {x: -1.5110188, y: -0.62667394}
       - {x: -1.7978983, y: 0.10426581}
   m_UseDelaunayMesh: 0
+--- !u!114 &2482882529968571608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8366526513308037286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 201e3e19c6466cc4a9fcaa5f469854df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabTemplate: {fileID: 8472090270252957170, guid: 4d7b2cef2ae5d604b93ddd2d7346bc79, type: 3}
+  offset: {x: 0, y: 2.5, z: 0}
+  jenisTutorial: 0
+  idTutorialUnik: TutorSerangBabi
+  isiDeskripsi: Untuk menyerang babi
+  hurufTombol: Tombol Mouse Kiri
+  canvasParent: {fileID: 0}
+  butuhItemSpesifik: 1
+  idSlotHarusDipegang: 0
+  tutorialBerikutnya: {fileID: 0}

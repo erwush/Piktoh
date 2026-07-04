@@ -16,6 +16,7 @@ MonoBehaviour:
   codeName: Biji
   itemName: Biji Umbi
   itemSprite: {fileID: 1523869429743019696, guid: cb0420495d2bb3a48a0753b191f985fd, type: 3}
-  itemCount: 52
+  itemCount: 1010
   isFood: 0
   isPlant: 1
+  isUnlocked: 1

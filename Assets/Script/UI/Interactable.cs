@@ -24,6 +24,16 @@ public class Interactable : MonoBehaviour
     {
         if (inArea && Input.GetButtonDown("Interact"))
         {
+            for(int i = 0; i < dialScript.sekardadu.Length; i++)
+            {
+                if(dialScript.sekardadu[i] == dialog)
+                {
+                    if(Questing.Instance.daftarMisi[Questing.Instance.indeksMisiAktif] != dialScript.quest[i])
+                    {
+                        return;
+                    }
+                }
+            }
             DialogUI.SetActive(true);
             dialScript.npc = this;
             player.GetComponent<Movement>().StopMove();

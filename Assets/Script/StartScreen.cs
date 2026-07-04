@@ -19,6 +19,7 @@ public class StartScreen : MonoBehaviour
     [Header("Texts")]
     public string text1 = "Powered By";
     public string text2 = "John Studio";
+    public GameObject obj;
 
     [Header("Finish")]
     public UnityEvent onFinished;
@@ -37,6 +38,7 @@ public class StartScreen : MonoBehaviour
 
     public void StartSequence()
     {
+        obj.SetActive(false);
         if (ireng != null)
             ireng.gameObject.SetActive(true);
 

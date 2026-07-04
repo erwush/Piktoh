@@ -1,47 +1,117 @@
+using UnityEngine.UI;
 using UnityEngine;
+using System.Collections;
 
 public class Turu : MonoBehaviour
 {
     public Cycle cycle;
     public GameObject keybindUI;
+    public Image blackScreen;
+
+    [Header("Fade")]
+    public float fadeSpeed = 2f;
 
     private bool playerInside;
+    private bool isSleeping;
 
     private void Start()
     {
         if (keybindUI != null)
             keybindUI.SetActive(false);
+
+        if (blackScreen != null)
+        {
+            Color c = blackScreen.color;
+            c.a = 0f;
+            blackScreen.color = c;
+        }
     }
 
     private void Update()
     {
-        if (playerInside && Input.GetKeyDown(KeyCode.E) && cycle.hour >= 22)
+        bool canSleep =
+            (cycle.hour >= 7 && cycle.hour < 19) ||
+            cycle.hour >= 22 ||
+            (cycle.hour < 5);
+
+        if (playerInside &&
+            !isSleeping &&
+            canSleep &&
+            Input.GetKeyDown(KeyCode.F))
         {
-            Sleep();
+            StartCoroutine(SleepRoutine());
+        }
+
+        if (playerInside && keybindUI != null)
+        {
+            keybindUI.SetActive(canSleep);
         }
     }
 
-    private void Sleep()
+    IEnumerator SleepRoutine()
     {
-        // Tambah hari
-        cycle.day++;
+        isSleeping = true;
 
-        // Set ke jam 05:00 pagi
-        cycle.time = cycle.duration * (5f / 24f);
-
-        // Update status waktu
-        cycle.hour = 5;
-        cycle.min = 0;
-
-        Debug.Log("Player tidur, hari berikutnya dimulai.");
-
-        // Paksa ganti ke pagi
-        if (cycle.cor == null)
+        // Fade In
+        while (blackScreen.color.a < 1f)
         {
-            cycle.cor = cycle.StartCoroutine(
-                cycle.GantiWaktu(Waktu.Pagi)
-            );
+            Color c = blackScreen.color;
+            c.a += fadeSpeed * Time.deltaTime;
+            blackScreen.color = c;
+
+            yield return null;
         }
+
+        Color fullBlack = blackScreen.color;
+        fullBlack.a = 1f;
+        blackScreen.color = fullBlack;
+
+        // Tidur siang -> malam
+        if (cycle.hour >= 7 && cycle.hour < 19)
+        {
+            cycle.time = cycle.duration * (19f / 24f);
+            cycle.hour = 19;
+            cycle.min = 0;
+
+            if (cycle.cor == null)
+            {
+                cycle.cor = cycle.StartCoroutine(
+                    cycle.GantiWaktu(Waktu.Malam)
+                );
+            }
+        }
+        // Tidur malam/dini hari -> pagi
+        else
+        {
+            cycle.time = cycle.duration * (5f / 24f);
+            cycle.hour = 5;
+            cycle.min = 0;
+
+            if (cycle.cor == null)
+            {
+                cycle.cor = cycle.StartCoroutine(
+                    cycle.GantiWaktu(Waktu.Pagi)
+                );
+            }
+        }
+
+        yield return new WaitForSeconds(1f);
+
+        // Fade Out
+        while (blackScreen.color.a > 0f)
+        {
+            Color c = blackScreen.color;
+            c.a -= fadeSpeed * Time.deltaTime;
+            blackScreen.color = c;
+
+            yield return null;
+        }
+
+        Color clear = blackScreen.color;
+        clear.a = 0f;
+        blackScreen.color = clear;
+
+        isSleeping = false;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -50,8 +120,13 @@ public class Turu : MonoBehaviour
         {
             playerInside = true;
 
-            if (keybindUI != null && cycle.hour >= 22)
-                keybindUI.SetActive(true);
+            bool canSleep =
+                (cycle.hour >= 7 && cycle.hour < 19) ||
+                cycle.hour >= 22 ||
+                (cycle.hour < 5);
+
+            if (keybindUI != null)
+                keybindUI.SetActive(canSleep);
         }
     }
 

@@ -47,10 +47,11 @@ public class Cycle : MonoBehaviour
     public float malamIntensity = 0.3f;
 
     public float lightTransitionDuration = 2f;
+    public bool summonedOnce;
 
     void Start()
     {
-        duration = 720f;
+        duration = 240f;
     }
 
     void Update()
@@ -72,7 +73,7 @@ public class Cycle : MonoBehaviour
         min = (int)((hourTime - hour) * 60f);
 
         // Spawn 3 babi jam 21:00 (sekali per hari)
-        if (hour >= 21 && !babiSpawnedToday && Questing.Instance.daftarMisi[2].status == QuestStatus.Completed)
+        if (hour >= 21 && !babiSpawnedToday && Questing.Instance.daftarMisi[4].status == QuestStatus.Completed)
         {
             SpawnBabi();
             babiSpawnedToday = true;
@@ -112,7 +113,16 @@ public class Cycle : MonoBehaviour
 
     void SpawnBabi()
     {
-        for (int i = 0; i < 3; i++)
+        int count = 0;
+        if (!summonedOnce) {
+            count = 2;
+            summonedOnce = true;
+        }
+        else
+        {
+            count = 1;
+        }
+        for (int i = 0; i < count; i++)
         {
             int r = Random.Range(0, lokasiBabi.Length);
             int x = Random.Range(0, 3);
@@ -198,11 +208,60 @@ public class Cycle : MonoBehaviour
         else if (newTime == Waktu.Malam)
         {
             StartCoroutine(LerpLight(malamColor, malamIntensity));
+            clockBg[0].SetActive(false);
+            clockBg[1].SetActive(true);
+
+            clockObj[0].GetComponent<Animator>().Play("StM");
+            clockObj[0].GetComponent<Animator>().SetBool("isSiang", false);
+
+            yield return new WaitForSeconds(0.5f);
+
+            clockObj[1].SetActive(true);
+            clockObj[1].GetComponent<Animator>().Play("StM");
+
+            yield return new WaitForSeconds(0.9f);
+
+            clockObj[1].GetComponent<Animator>().SetBool("isMalam", true);
         }
 
         yield return new WaitForSeconds(5f);
         cor = null;
     }
+
+    public void SetWaktuInstant(Waktu newTime)
+{
+    waktu = newTime;
+
+    StopAllCoroutines();
+    cor = null;
+
+    switch (newTime)
+    {
+        case Waktu.Pagi:
+            globalLight.color = pagiColor;
+            globalLight.intensity = pagiIntensity;
+
+            clockBg[0].SetActive(true);
+            clockBg[1].SetActive(false);
+
+            clockObj[0].SetActive(true);
+            clockObj[1].SetActive(false);
+
+            break;
+
+        case Waktu.Malam:
+            globalLight.color = malamColor;
+            globalLight.intensity = malamIntensity;
+
+            clockBg[0].SetActive(false);
+            clockBg[1].SetActive(true);
+
+            clockObj[0].SetActive(false);
+            clockObj[1].SetActive(true);
+
+            break;
+    }
+}
 }
 
 public enum Waktu

@@ -36,8 +36,22 @@ public class DetectorCek : MonoBehaviour
     void Start()
     {
         UpdateText();
-        rumah.GetComponent<SpriteRenderer>().color=  new Color(1f, 1f, 1f, 0f);
-        npc.SetActive(false);
+
+        if (rumah != null)
+        {
+            SpriteRenderer sr = rumah.GetComponent<SpriteRenderer>();
+
+            if (sr != null)
+                sr.color = new Color(1f, 1f, 1f, 0f);
+
+            Collider2D col = rumah.GetComponent<Collider2D>();
+
+            if (col != null)
+                col.isTrigger = true; // sebelum jadi bisa ditembus
+        }
+
+        if (npc != null)
+            npc.SetActive(false);
     }
 
     bool SemuaPohonHilang()
@@ -48,19 +62,38 @@ public class DetectorCek : MonoBehaviour
         return treeParent.childCount <= 0;
     }
 
+    bool QuestBangunAktif()
+    {
+        return Questing.Instance.daftarMisi[2].status == QuestStatus.Active ||
+               Questing.Instance.daftarMisi[4].status == QuestStatus.Active ||
+               Questing.Instance.daftarMisi[6].status == QuestStatus.Active ||
+               Questing.Instance.daftarMisi[11].status == QuestStatus.Active;
+    }
+
     void UpdateText()
     {
         if (teksProgres == null)
             return;
 
+        // Rumah bisa ditembus sebelum selesai, solid setelah selesai
+        if (rumah != null)
+        {
+            Collider2D col = rumah.GetComponent<Collider2D>();
+
+            if (col != null)
+                col.isTrigger = !full;
+        }
+
         if (!SemuaPohonHilang())
         {
-            teksProgres.text = "";
-            rumah.GetComponent<Collider2D>().isTrigger = true;
+            teksProgres.text = "Tebang semua pohon di area ini!";
             return;
-        } else
+        }
+
+        if (!QuestBangunAktif() && !full)
         {
-            rumah.GetComponent<Collider2D>().isTrigger = false;
+            teksProgres.text = "Selesaikan quest terlebih dahulu!";
+            return;
         }
 
         System.Text.StringBuilder sb = new();
@@ -88,8 +121,9 @@ public class DetectorCek : MonoBehaviour
 
     private void Update()
     {
-        if (teksProgres != null)
-            teksProgres.gameObject.SetActive(SemuaPohonHilang());
+        // if (teksProgres != null)
+        //     teksProgres.gameObject.SetActive(SemuaPohonHilang());
+        UpdateText();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -99,7 +133,9 @@ public class DetectorCek : MonoBehaviour
 
         if (other.CompareTag("Player") && !full)
         {
-            if (inventory != null && prosesInput == null)
+            if (inventory != null &&
+                prosesInput == null &&
+                QuestBangunAktif())
             {
                 prosesInput = StartCoroutine(InputItem());
             }
@@ -180,9 +216,6 @@ public class DetectorCek : MonoBehaviour
     {
         full = true;
 
-
-
-
         if (teksProgres != null)
             teksProgres.gameObject.SetActive(false);
 
@@ -192,11 +225,26 @@ public class DetectorCek : MonoBehaviour
             Questing.Instance.LaporkanProgress(4, 1);
         else if (Questing.Instance.daftarMisi[6].status == QuestStatus.Active)
             Questing.Instance.LaporkanProgress(6, 1);
-        else if (Questing.Instance.daftarMisi[10].status == QuestStatus.Active)
-            Questing.Instance.LaporkanProgress(10, 1);
-        if(npc != null) npc.SetActive(true);
-            
-        rumah.GetComponent<SpriteRenderer>().color=  new Color(1f, 1f, 1f, 1f);
+        else if (Questing.Instance.daftarMisi[11].status == QuestStatus.Active)
+            Questing.Instance.LaporkanProgress(11, 1);
+
+        if (npc != null)
+            npc.SetActive(true);
+
+        if (rumah != null)
+        {
+            SpriteRenderer sr = rumah.GetComponent<SpriteRenderer>();
+
+            if (sr != null)
+                sr.color = Color.white;
+
+            Collider2D col = rumah.GetComponent<Collider2D>();
+
+            if (col != null)
+                col.isTrigger = false; // setelah jadi jadi solid
+        }
+
+
         gameObject.SetActive(false);
     }
 }

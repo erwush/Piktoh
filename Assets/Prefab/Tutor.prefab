@@ -171,7 +171,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 1.04, y: -0.58}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &791370428263031625
@@ -1200,7 +1200,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 1.039978, y: -0.5800171}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &8084488181602667722
@@ -1317,8 +1317,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 1.539978, y: 12.159973}
-  m_SizeDelta: {x: 7.6454, y: 8.9165}
+  m_AnchoredPosition: {x: -0.86187744, y: 17.34491}
+  m_SizeDelta: {x: 2.8417, y: 2.7218}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &2006755133697430605
 Canvas:
@@ -1365,7 +1365,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &5813572881531673503
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1401,6 +1401,9 @@ MonoBehaviour:
   idTutorialUnik: 
   isiDeskripsi: 
   hurufTombol: E
+  canvasParent: {fileID: 0}
+  butuhItemSpesifik: 0
+  idSlotHarusDipegang: 0
   tutorialBerikutnya: {fileID: 0}
 --- !u!1 &8614630751426215402
 GameObject:
@@ -1436,8 +1439,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.8399991, y: -0.07500112}
-  m_SizeDelta: {x: 6.653, y: 2.563}
+  m_AnchoredPosition: {x: -1.0577, y: -1.88}
+  m_SizeDelta: {x: 5.7822, y: 8.4166}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &751866389497123829
 CanvasRenderer:
@@ -1502,7 +1505,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
+  m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_characterHorizontalScale: 1

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa9099ac61f6e9a4f94ee7aeb070e57d, type: 3}
   m_Name: Sekardadu 3
   m_EditorClassIdentifier: 
-  dialogCount: 11
+  dialogCount: 12
   currentDial: 0
   nama:
   - Jiman
@@ -26,6 +26,7 @@ MonoBehaviour:
   - Jiman
   - Dewi Sekardadu
   - Jiman
+  - Dewi Sekardadu
   text:
   - '(Bergegas menghampiri dengan senyum ramah, lalu menundukkan badan)<br>
 
@@ -78,6 +79,8 @@ MonoBehaviour:
   - '"Sendika dawuh, Gusti Putri. Jika demikian, hamba mohon pamit untuk melanjutkan
     perjalanan mengecek bendungan air. Jika Gusti Putri membutuhkan sesuatu, jangan
     sungkan memanggil hamba atau warga yang melintas."'
+  - '"Pergilah dengan tenang, Ki Jiman. Kebaikan dan keikhlasanmu hari ini akan dicatat
+    oleh semesta. Aku akan menunggumu di sini, melanjutkan doaku."'
   avatar:
   - {fileID: 21300000, guid: 28b5c75d7e59151448f4bb415e268398, type: 3}
   - {fileID: 21300000, guid: 4e277030be32ed14aa428447e2fb2dff, type: 3}
@@ -90,6 +93,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 28b5c75d7e59151448f4bb415e268398, type: 3}
   - {fileID: 21300000, guid: 4e277030be32ed14aa428447e2fb2dff, type: 3}
   - {fileID: 21300000, guid: 28b5c75d7e59151448f4bb415e268398, type: 3}
+  - {fileID: 21300000, guid: 4e277030be32ed14aa428447e2fb2dff, type: 3}
   typingSpeed: 0
   isItem: 0
   itemCount: 0

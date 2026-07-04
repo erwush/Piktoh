@@ -21,8 +21,12 @@ public class DroppedItem : MonoBehaviour
             {
                 if (inpen.item[i] == data)
                 {
-                    inpen.item[i].itemCount++;
+                    inpen.AddItem(data, 1);
                     inpen.stackCount[i].text = inpen.item[i].itemCount.ToString();
+                    if(inpen.item[i].codeName == "watu")
+                    {
+                        inpen.AddItem(inpen.item[i], 2);
+                    }
                     if(inpen.item[i].codeName == "kokkayu" && Questing.Instance.daftarMisi[0].status == QuestStatus.Active)
                     {
                          Questing.Instance.LaporkanProgress(0, 1);

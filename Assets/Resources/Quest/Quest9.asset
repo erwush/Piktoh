@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Quest9
   m_EditorClassIdentifier: 
   questId: 9
-  displayName: Makan Bersama Dewi Sekardadu
-  desc: Pergi Ketempat Dewi Sekardadu Dan Makan Bersamanya
+  displayName: Penuhi Keinginan Dewi Sukardadu
+  desc: Dapatkan 3 ikan dengan memancing
   pos: {x: 0, y: 0, z: 0}
-  status: 0
+  status: 1
   currentAmount: 0
-  targetAmount: 1
+  targetAmount: 3

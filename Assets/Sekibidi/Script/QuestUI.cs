@@ -11,10 +11,10 @@ public class QuestUI : MonoBehaviour
     private Coroutine cor;
     private YuAi YuAi;
     public Animator anim;
-    
+
     [Header("UI Text Elements")]
     // quesText[0] = Tempat Judul, quesText[1] = Tempat Deskripsi
-    public TextMeshProUGUI[] quesText; 
+    public TextMeshProUGUI[] quesText;
 
     private Questing questingManager;
 
@@ -28,6 +28,7 @@ public class QuestUI : MonoBehaviour
 
     void Update()
     {
+        
         if (Input.GetKeyDown(KeyCode.Q) && cor == null)
         {
             cor = StartCoroutine(MoveUI());
@@ -37,18 +38,15 @@ public class QuestUI : MonoBehaviour
     // Fungsi pembantu untuk mengubah isi teks teks dari script Questing
     public void UpdateTeksMisi(string judul, string deskripsi)
     {
-        if (quesText.Length >= 2)
-        {
             quesText[0].text = judul;       // Mengisi Questext1
-            quesText[1].text = deskripsi;   // Mengisi Questext2
-        }
+            quesText[1].text = deskripsi + "<br>" + "Progress: " + questingManager.daftarMisi[questingManager.indeksMisiAktif].currentAmount + "/" + questingManager.daftarMisi[questingManager.indeksMisiAktif].targetAmount;
     }
 
     IEnumerator MoveUI()
     {
         RectTransform rect = UI.GetComponent<RectTransform>();
 
-        if (!isOpen && !YuAi.isOpen)
+        if (!isOpen)
         {
             if (questingManager.isNotif)
             {

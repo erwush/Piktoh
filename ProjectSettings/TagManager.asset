@@ -10,6 +10,11 @@ TagManager:
   - Bait
   - House
   - Tree
+  - Lahan
+  - Stone
+  - Wedus
+  - Mancing
+  - Dewi
   layers:
   - Default
   - TransparentFX

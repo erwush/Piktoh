@@ -10,5 +10,6 @@ public class Item : ScriptableObject
     public int itemCount;
     public bool isFood;
     public bool isPlant;
+    public bool isUnlocked;
 
 }

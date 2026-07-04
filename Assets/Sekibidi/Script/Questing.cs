@@ -11,9 +11,9 @@ public class Questing : MonoBehaviour
     public Animator notif;
     public bool isNotif;
 
-    public List<Quest> daftarMisi = new List<Quest>(); 
+    public List<Quest> daftarMisi = new List<Quest>();
     public int indeksMisiAktif = 0;
-    public QuestUI questUI; 
+    public QuestUI questUI;
 
     void Awake()
     {
@@ -60,20 +60,21 @@ public class Questing : MonoBehaviour
     // SATU-SATUNYA FUNGSI UNTUK MENERIMA LAPORAN DARI MANAPUN
     // ========================================================
     public void LaporkanProgress(int idAksi, int jumlah = 1)
-{
-    if (indeksMisiAktif >= daftarMisi.Count) return;
+    {
+        if (indeksMisiAktif >= daftarMisi.Count) return;
 
-    Quest quest = daftarMisi[indeksMisiAktif];
+        Quest quest = daftarMisi[indeksMisiAktif];
 
-    if (quest.questId != idAksi) return;
+        if (quest.questId != idAksi) return;
 
         quest.currentAmount += jumlah;
 
-    if (quest.currentAmount >= quest.targetAmount)
-    {
-        SelesaikanMisiAktif();
+        questUI.UpdateTeksMisi(daftarMisi[indeksMisiAktif].displayName, daftarMisi[indeksMisiAktif].desc);
+        if (quest.currentAmount >= quest.targetAmount)
+        {
+            SelesaikanMisiAktif();
+        }
     }
-}
 
     private void SelesaikanMisiAktif()
     {
@@ -92,9 +93,10 @@ public class Questing : MonoBehaviour
         StartCoroutine(AnimasiNotif());
         TampilkanMisiAktif();
     }
-    
+
     private IEnumerator AnimasiNotif()
     {
+        notif.speed = 1f;
         notif.Play("Turun");
         yield return new WaitForSeconds(0.5f);
         notif.speed = 0f;

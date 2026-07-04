@@ -11,11 +11,13 @@ public class Biji : MonoBehaviour
     public Sprite[] spriteImg;
     public SpriteRenderer sprite;
     public int state;
+    public Player pleyer;
     
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        pleyer=  GameObject.FindWithTag("Player").GetComponent<Player>();
         timer = 0f;
         sprite = GetComponent<SpriteRenderer>();
         canFarmed = false;
@@ -24,18 +26,18 @@ public class Biji : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.localScale = new Vector3(1+timer / 720f, 1+timer / 720f, 1+timer/ 720f);
-        if (timer < 720f)
+        transform.localScale = new Vector3(1+timer / 20f, 1+timer / 20f, 1+timer/ 20f);
+        if (timer < 20f)
         {
             timer += Time.deltaTime;
         }
-        if (timer <= 360f)
+        if (timer <= 10f)
         {
             state = 0;
             sprite.sprite = spriteImg[0];
             canFarmed = false;
             
-        } else if(timer > 360f && timer < 720f)
+        } else if(timer > 10f && timer < 20f)
         {
             state = 1;
             sprite.sprite = spriteImg[1];
@@ -50,16 +52,25 @@ public class Biji : MonoBehaviour
         //     tanah.biji--;
         //     Destroy(gameObject);
         // }
-        if(inArea && Input.GetKeyDown(KeyCode.E) && canFarmed && hotbar.activeSlot == 3)
+        if (inArea && Input.GetKeyDown(KeyCode.F) && canFarmed && hotbar.activeSlot == 3)
         {
-            inven.item[tanah.plantIdx[0]].itemCount += 1;
+            inven.AddItem(tanah.item[0], 1);
             // inven.stackCount[tanah.plantIdx[0]].text = inven.item[tanah.plantIdx[0]].itemCount.ToString();
-            inven.item[tanah.plantIdx[1]].itemCount += 1;
+            inven.AddItem(tanah.item[1], 2);
             tanah.state = 1;
             tanah.biji = null;
             Destroy(gameObject);
 
             // inven.stackCount[tanah.plantIdx[1]].text = inven.item[tanah.plantIdx[1]].itemCount.ToString();
+        }
+        
+        if(inArea && Input.GetKeyDown(KeyCode.F) && !canFarmed){
+            if(pleyer.sumur > 0)
+            {
+                pleyer.sumur--;
+                timer = 20f;
+                canFarmed = true;
+            }
         }
     }
 

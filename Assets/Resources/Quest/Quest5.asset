@@ -14,8 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questId: 5
   displayName: Bangun Desa
-  desc: Bunuh Babi Yang Ingin Menyerang Desa
+  desc: 'Tunggu malam dan bunuh babi yang ingin menyerang desa. <br>
+
+    Tips: Kamu
+    dapat pergi ke rumah yang berada di bawah kiri untuk tidur siang dan bangun di
+    malam hari. Kamu juga dapat melakukan hal sebaliknya.'
   pos: {x: 0, y: 0, z: 0}
   status: 0
   currentAmount: 0
-  targetAmount: 1
+  targetAmount: 2

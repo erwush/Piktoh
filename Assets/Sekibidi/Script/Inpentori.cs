@@ -31,6 +31,7 @@ public class Inpentori : MonoBehaviour
     public GameObject inven;
     public Button[] slotBtn;
     public bool isEat;
+    public DialogUI dial;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -47,12 +48,31 @@ public class Inpentori : MonoBehaviour
         //find tag player;
         pleyer = GameObject.FindWithTag("Player").GetComponent<Player>();
         planim = pleyer.GetComponent<Animator>();
+        foreach(Item i in item)
+        {
+            
+            if(i.codeName != "Biji")
+            {
+                i.isUnlocked = false;
+                i.itemCount = 0;
+            }
+        }
     }
 
     void Update()
     {
+        if(Input.GetKey(KeyCode.Slash) && Input.GetKeyDown(KeyCode.I)){
+            foreach(Item i in item)
+            {
+                i.isUnlocked = true;
+                i.itemCount =  1500;
+            }
+        }
         if (Input.GetKeyDown(KeyCode.B) && !isMoving)
         {
+            ToggleInventory();
+        }
+        if(Input.GetKeyDown(KeyCode.Escape) && !isMoving && isOpen){
             ToggleInventory();
         }
 
@@ -73,7 +93,7 @@ public class Inpentori : MonoBehaviour
             for (int i = 0; i < item.Count; i++)
             {
                 slotImg[i].sprite = item[i].itemSprite;
-                
+
                 dropButton[i] = slot[i].transform.Find("Drop").GetComponent<Button>();
                 useButton[i] = slot[i].transform.Find("Use").GetComponent<Button>();
                 slotBtn[i] = slot[i].GetComponent<Button>();
@@ -82,9 +102,22 @@ public class Inpentori : MonoBehaviour
                 slotInpen[i] = slot[i].GetComponent<SlotInpen>();
             }
         }
-        for(int i = 0; i < item.Count; i++)
+        for (int i = 0; i < item.Count; i++)
         {
-            stackCount[i].text = item[i].itemCount.ToString();
+            if (!item[i].isUnlocked)
+            {
+                slot[i].gameObject.SetActive(false);
+                continue;
+            }
+
+            slot[i].gameObject.SetActive(true);
+            if(item[i].itemCount > 500)
+            {
+                stackCount[i].text = "∞";
+            } else{
+                stackCount[i].text = item[i].itemCount.ToString();
+            }
+            
         }
         inv.SetActive(true);
         inven.GetComponent<Animator>().Play("Open");
@@ -97,7 +130,7 @@ public class Inpentori : MonoBehaviour
 
     IEnumerator CloseInventory()
     {
-        
+
         isMoving = true;
         inven.GetComponent<Animator>().speed = 1;
         inven.GetComponent<Animator>().Play("Close");
@@ -122,7 +155,7 @@ public class Inpentori : MonoBehaviour
             isOpen = false;
             YuAi.isOpen = false;
         }
-        else if (!isOpen && !YuAi.isOpen)
+        else if (!isOpen)
         {
             StartCoroutine(ShowInventory());
             isOpen = true;
@@ -147,20 +180,25 @@ public class Inpentori : MonoBehaviour
 
     public void AddItem(Item item, int count)
     {
-
+        if (!item.isUnlocked)
+        {
+            item.isUnlocked = true;
+            StartCoroutine(dial.GiveItem(item));
+        }
         for (int i = 0; i < this.item.Count; i++)
         {
             if (this.item[i].codeName == item.codeName)
             {
                 this.item[i].itemCount += count;
+                stackCount[i].text = this.item[i].itemCount.ToString();
                 return;
             }
         }
     }
-    
+
     public void ReduceItem(Item item, int count)
     {
-        
+
         for (int i = 0; i < this.item.Count; i++)
         {
             if (this.item[i].codeName == item.codeName)
@@ -180,7 +218,10 @@ public class Inpentori : MonoBehaviour
             justEat = true;
             pleyer.ChangeEnergy(50f);
             pleyer.ChangeHealth(0.3f);
-            if(Questing.Instance.daftarMisi[1].status == QuestStatus.Active) Questing.Instance.LaporkanProgress(1, 1);
+            if(item[id].codeName == "Umbikibidi")
+            {
+                 if(Questing.Instance.daftarMisi[1].status == QuestStatus.Active && Questing.Instance.daftarMisi[1].currentAmount == 2) Questing.Instance.LaporkanProgress(1, 1);
+            }
         }
     }
 

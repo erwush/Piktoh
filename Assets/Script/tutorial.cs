@@ -13,8 +13,9 @@ public class tutorial : MonoBehaviour
     [Header("Konfigurasi Di Inspector")]
     public TipeTutorial jenisTutorial; 
     public string idTutorialUnik; 
-    public string isiDeskripsi; 
+    public string isiDeskripsi;
     public string hurufTombol = "E"; 
+    public Transform canvasParent;
 
     // TAMBAHKAN INI: Fitur cek item dinamis dari Inspector
     [Header("Kondisi Pegang Item")]
@@ -41,11 +42,11 @@ public class tutorial : MonoBehaviour
     public void MulaiTutorial(Transform player)
     {
         if (daftarTutorialSelesai.Contains(idTutorialUnik)) return;
-        if (activeUI != null) return; 
+        if (activeUI != null) return;
 
         savedPlayerTransform = player;
-        activeUI = Instantiate(prefabTemplate, player.position + offset, Quaternion.identity, player);
-
+        // activeUI = Instantiate(prefabTemplate, player.position + offset, Quaternion.identity, player);
+        activeUI = Instantiate(prefabTemplate, canvasParent);
         Transform panelSingle = activeUI.transform.Find("Panel_Single");
         Transform panelWASD = activeUI.transform.Find("Panel_WASD");
 
@@ -127,7 +128,7 @@ public class tutorial : MonoBehaviour
         if (!daftarTutorialSelesai.Contains(idID))
         {
             daftarTutorialSelesai.Add(idID);
-            
+
             tutorial[] semuaTutorDiScene = FindObjectsByType<tutorial>(FindObjectsSortMode.None);
             foreach (tutorial t in semuaTutorDiScene)
             {
@@ -143,6 +144,11 @@ public class tutorial : MonoBehaviour
             }
         }
     }
+    
+    void ResetProgress()
+    {
+        daftarTutorialSelesai.Clear();
+    }
 
     private void OnTriggerExit2D(Collider2D other)
     {
@@ -152,3 +158,4 @@ public class tutorial : MonoBehaviour
         }
     }
 }
+
